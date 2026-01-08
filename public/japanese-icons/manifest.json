@@ -2,12 +2,12 @@
   "name": "日本語 Japanese Phrases",
   "short_name": "日本語",
   "description": "Japanese language learning phrases and vocabulary app",
-  "start_url": "/projects/japanese-quick-guide",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#f8f6f3",
   "theme_color": "#c45c48",
   "orientation": "portrait-primary",
-  "scope": "/projects/japanese-quick-guide/",
+  "scope": "/",
   "icons": [
     {
       "src": "/japanese-icons/icon-192x192.png",
