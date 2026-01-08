@@ -7,12 +7,12 @@
   --text-primary: #49453f;
   --text-secondary: #6b6660;
   --text-tertiary: #948e83;
-  --accent: #c45c48;
-  --accent-warm: #d4806e;
-  --accent-soft: rgba(196, 92, 72, 0.08);
-  --accent-softer: rgba(196, 92, 72, 0.04);
-  --accent-hover: #b35242;
-  --accent-glow: rgba(196, 92, 72, 0.12);
+  --accent: #ad4835;
+  --accent-warm: #c45c48;
+  --accent-soft: rgba(173, 72, 53, 0.08);
+  --accent-softer: rgba(173, 72, 53, 0.04);
+  --accent-hover: #8f3a2a;
+  --accent-glow: rgba(173, 72, 53, 0.12);
   --border: rgba(73, 69, 63, 0.08);
   --border-strong: rgba(73, 69, 63, 0.12);
   --ink: #49453f;
