@@ -1,0 +1,636 @@
+{
+  "metadata": {
+    "last_updated": "2024-11-28",
+    "total_categories": 6,
+    "version": "2.0"
+  },
+
+  "restaurant": {
+    "entering_seating": [
+      { "jp": "すみません", "en": "Excuse me (to get attention)" },
+      { "jp": "二人（ふたり）です", "en": "Two people" },
+      { "jp": "予約（よやく）があります", "en": "I have a reservation" },
+      {
+        "jp": "禁煙席（きんえんせき）をお願（ねが）いします",
+        "en": "Non-smoking seat please"
+      }
+    ],
+    "ordering": [
+      { "jp": "メニューをください", "en": "Menu please" },
+      { "jp": "おすすめは何（なん）ですか？", "en": "What do you recommend?" },
+      { "jp": "これをください", "en": "I'll have this (pointing)" },
+      { "jp": "〜をひとつお願（ねが）いします", "en": "One ~ please" },
+      { "jp": "ビールを二本（にほん）ください", "en": "Two beers please" },
+      { "jp": "お水（みず）をください", "en": "Water please" },
+      { "jp": "お箸（はし）をください", "en": "Chopsticks please" },
+      { "jp": "フォークをください", "en": "Fork please" },
+      { "jp": "スプーンをください", "en": "Spoon please" },
+      { "jp": "前菜（ぜんさい）", "en": "appetizer" }
+    ],
+    "dietary_needs": [
+      { "jp": "アレルギーがあります", "en": "I have allergies" },
+      { "jp": "ベジタリアンです", "en": "I'm vegetarian" },
+      { "jp": "辛（から）くしないでください", "en": "Not spicy please" },
+      {
+        "jp": "豚肉（ぶたにく）は食（た）べられません",
+        "en": "I can't eat pork"
+      },
+      {
+        "jp": "牛肉（ぎゅうにく）は食（た）べられません",
+        "en": "I can't eat beef"
+      },
+      { "jp": "なにが はいっていましたか？", "en": "What is in it?" }
+    ],
+    "during_meal": [
+      { "jp": "美味（おい）しい！", "en": "Delicious!" },
+      { "jp": "いただきます", "en": "Thank you for the food (before eating)" },
+      {
+        "jp": "ごちそうさまでした",
+        "en": "Thank you for the meal (after eating)"
+      },
+      {
+        "jp": "もう一回（いっかい）お願（ねが）いします",
+        "en": "One more please"
+      },
+      {
+        "jp": "お皿（さら）を下（さ）げてください",
+        "en": "Please clear the plates"
+      },
+      { "jp": "まずい", "en": "bad taste; unpalatable" },
+      { "jp": "おつまみ", "en": "snack with drink" }
+    ],
+    "paying": [
+      { "jp": "お会計（かいけい）お願（ねが）いします", "en": "Check please" },
+      {
+        "jp": "お勘定（かんじょう）をお願（ねが）いします",
+        "en": "Bill please"
+      },
+      {
+        "jp": "カードで払（はら）ってもいいですか？",
+        "en": "Can I pay by card?"
+      },
+      { "jp": "現金（げんきん）だけですか？", "en": "Cash only?" },
+      {
+        "jp": "別々（べつべつ）でお願（ねが）いします",
+        "en": "Separate checks please"
+      },
+      { "jp": "払（はら）う", "en": "to pay" },
+      { "jp": "お釣り（おつり）", "en": "change (money)" },
+      { "jp": "奢る（おごる）", "en": "to treat; pay for someone" },
+      { "jp": "割引（わりびき）", "en": "discount" }
+    ],
+    "takeout": [
+      {
+        "jp": "持（も）ち帰（かえ）りできますか？",
+        "en": "Can I get this to go?"
+      },
+      { "jp": "ここで食（た）べます", "en": "I'll eat here" },
+      { "jp": "持ち帰り（もちかえり）", "en": "to-go" }
+    ]
+  },
+
+  "shopping": {
+    "looking_around": [
+      { "jp": "見（み）ているだけです", "en": "Just looking" },
+      { "jp": "〜はどこですか？", "en": "Where is ~?" },
+      { "jp": "〜を探（さが）しています", "en": "I'm searching for ~" },
+      { "jp": "探す（さがす）", "en": "to search" },
+      { "jp": "見（み）つける", "en": "to find" }
+    ],
+    "asking_about_items": [
+      { "jp": "これはいくらですか？", "en": "How much is this?" },
+      {
+        "jp": "もっと安（やす）いのはありますか？",
+        "en": "Do you have something cheaper?"
+      },
+      {
+        "jp": "他（ほか）の色（いろ）はありますか？",
+        "en": "Do you have other colors?"
+      },
+      {
+        "jp": "大（おお）きいサイズはありますか？",
+        "en": "Do you have a larger size?"
+      },
+      {
+        "jp": "小（ちい）さいサイズはありますか？",
+        "en": "Do you have a smaller size?"
+      },
+      { "jp": "試（ため）してもいいですか？", "en": "Can I try it?" },
+      {
+        "jp": "試着室（しちゃくしつ）はどこですか？",
+        "en": "Where is the fitting room?"
+      },
+      { "jp": "試着（しちゃく）します", "en": "try on" },
+      { "jp": "しちゃく してもいいですか", "en": "Can I try on?" },
+      { "jp": "値段（ねだん）", "en": "price" },
+      { "jp": "似合う（にあう）", "en": "looks good" },
+      { "jp": "おしゃれ", "en": "stylish" },
+      { "jp": "売り切れ（うりきれ）", "en": "sold out" }
+    ],
+    "purchasing": [
+      { "jp": "これをください", "en": "I'll take this" },
+      { "jp": "これを買（か）います", "en": "I'll buy this" },
+      { "jp": "袋（ふくろ）をください", "en": "A bag please" },
+      { "jp": "袋（ふくろ）は要（い）りません", "en": "I don't need a bag" },
+      { "jp": "領収書（りょうしゅうしょ）をください", "en": "Receipt please" },
+      {
+        "jp": "クレジットカードは使（つか）えますか？",
+        "en": "Do you accept credit cards?"
+      },
+      { "jp": "免税（めんぜい）できますか？", "en": "Can I get tax-free?" }
+    ],
+    "returns": [
+      { "jp": "返品（へんぴん）できますか？", "en": "Can I return this?" },
+      { "jp": "交換（こうかん）できますか？", "en": "Can I exchange this?" },
+      { "jp": "壊（こわ）れています", "en": "It's broken" },
+      { "jp": "壊れる（こわれる）", "en": "to break" }
+    ]
+  },
+
+  "conversation": {
+    "basic_greetings": [
+      { "jp": "こんにちは", "en": "Hello / Good afternoon" },
+      { "jp": "おはようございます", "en": "Good morning" },
+      { "jp": "こんばんは", "en": "Good evening" },
+      { "jp": "さようなら", "en": "Goodbye" },
+      { "jp": "またね", "en": "See you later (casual)" },
+      {
+        "jp": "お疲（つか）れ様（さま）でした",
+        "en": "Thank you for your hard work"
+      }
+    ],
+    "thanks_apologies": [
+      { "jp": "ありがとうございます", "en": "Thank you" },
+      { "jp": "どうもありがとう", "en": "Thanks a lot" },
+      { "jp": "すみません", "en": "Sorry / Excuse me" },
+      { "jp": "ごめんなさい", "en": "I'm sorry" },
+      { "jp": "どういたしまして", "en": "You're welcome" },
+      { "jp": "お願（ねが）いします", "en": "Please" },
+      { "jp": "お願（ねが）い", "en": "desire; wish; hope" },
+      { "jp": "失礼（しつれい）", "en": "discourtesy; impoliteness" }
+    ],
+    "yes_no": [
+      { "jp": "はい", "en": "Yes" },
+      { "jp": "いいえ", "en": "No" },
+      { "jp": "大丈夫（だいじょうぶ）です", "en": "It's okay / I'm fine" },
+      { "jp": "分（わ）かりました", "en": "I understand / Got it" },
+      { "jp": "分（わ）かりません", "en": "I don't understand" }
+    ],
+    "asking_for_help": [
+      { "jp": "助（たす）けてください", "en": "Please help me" },
+      {
+        "jp": "英語（えいご）を話（はな）せますか？",
+        "en": "Do you speak English?"
+      },
+      {
+        "jp": "もう一度（いちど）お願（ねが）いします",
+        "en": "One more time please"
+      },
+      { "jp": "ゆっくり話（はな）してください", "en": "Please speak slowly" },
+      { "jp": "書（か）いてください", "en": "Please write it down" },
+      { "jp": "道（みち）に迷（まよ）いました", "en": "I'm lost" },
+      { "jp": "助ける（たすける）", "en": "to help" }
+    ],
+    "introductions": [
+      { "jp": "はじめまして", "en": "Nice to meet you" },
+      { "jp": "私（わたし）の名前（なまえ）は〜です", "en": "My name is ~" },
+      { "jp": "〜から来（き）ました", "en": "I'm from ~" },
+      {
+        "jp": "よろしくお願（ねが）いします",
+        "en": "Please to meet you / Please treat me well"
+      },
+      { "jp": "紹介（しょうかい）する", "en": "to introduce" }
+    ],
+    "questions": [
+      { "jp": "これは何（なん）ですか？", "en": "What is this?" },
+      { "jp": "どこですか？", "en": "Where is it?" },
+      { "jp": "いつですか？", "en": "When is it?" },
+      { "jp": "なぜですか？", "en": "Why?" },
+      { "jp": "どうやって？", "en": "How?" },
+      { "jp": "いくらですか？", "en": "How much?" },
+      { "jp": "どう おもいますか", "en": "What do you think?" }
+    ],
+    "expressions": [
+      { "jp": "そう思う", "en": "I think so" },
+      {
+        "jp": "好（す）きでも嫌（きら）いでもないです",
+        "en": "Neither like nor dislike"
+      },
+      { "jp": "それに", "en": "Also; on top of that; in addition" },
+      { "jp": "それから", "en": "After that" },
+      { "jp": "たとえば", "en": "For example" },
+      { "jp": "とりあえず", "en": "For now; for the time being" },
+      { "jp": "確かに（たしかに）", "en": "Surely; certainly" },
+      { "jp": "実は（じつは）", "en": "Actually" },
+      { "jp": "特（とく）に～", "en": "Especially" },
+      { "jp": "〜といいです", "en": "I hope that ~" },
+      { "jp": "かわりに", "en": "Instead" },
+      { "jp": "それぞれ", "en": "Each" },
+      { "jp": "以外（いがい）", "en": "Except" }
+    ]
+  },
+
+  "counters": {
+    "general_objects": [
+      { "num": "1", "jp": "ひとつ" },
+      { "num": "2", "jp": "ふたつ" },
+      { "num": "3", "jp": "みっつ" },
+      { "num": "4", "jp": "よっつ" },
+      { "num": "5", "jp": "いつつ" },
+      { "num": "6", "jp": "むっつ" },
+      { "num": "7", "jp": "ななつ" },
+      { "num": "8", "jp": "やっつ" },
+      { "num": "9", "jp": "ここのつ" },
+      { "num": "10", "jp": "とお" }
+    ],
+    "people": [
+      { "num": "1", "jp": "一人（ひとり）" },
+      { "num": "2", "jp": "二人（ふたり）" },
+      { "num": "3", "jp": "三人（さんにん）" },
+      { "num": "4", "jp": "四人（よにん）" },
+      { "num": "5", "jp": "五人（ごにん）" },
+      { "num": "6", "jp": "六人（ろくにん）" },
+      { "num": "7", "jp": "七人（しちにん）" },
+      { "num": "8", "jp": "八人（はちにん）" },
+      { "num": "9", "jp": "九人（きゅうにん）" },
+      { "num": "10", "jp": "十人（じゅうにん）" }
+    ],
+    "flat_objects": [
+      { "num": "1", "jp": "一枚（いちまい）" },
+      { "num": "2", "jp": "二枚（にまい）" },
+      { "num": "3", "jp": "三枚（さんまい）" },
+      { "num": "4", "jp": "四枚（よんまい）" },
+      { "num": "5", "jp": "五枚（ごまい）" },
+      { "num": "6", "jp": "六枚（ろくまい）" },
+      { "num": "7", "jp": "七枚（ななまい）" },
+      { "num": "8", "jp": "八枚（はちまい）" },
+      { "num": "9", "jp": "九枚（きゅうまい）" },
+      { "num": "10", "jp": "十枚（じゅうまい）" }
+    ],
+    "long_objects": [
+      { "num": "1", "jp": "一本（いっぽん）" },
+      { "num": "2", "jp": "二本（にほん）" },
+      { "num": "3", "jp": "三本（さんぼん）" },
+      { "num": "4", "jp": "四本（よんほん）" },
+      { "num": "5", "jp": "五本（ごほん）" },
+      { "num": "6", "jp": "六本（ろっぽん）" },
+      { "num": "7", "jp": "七本（ななほん）" },
+      { "num": "8", "jp": "八本（はっぽん）" },
+      { "num": "9", "jp": "九本（きゅうほん）" },
+      { "num": "10", "jp": "十本（じゅっぽん）" }
+    ],
+    "bound_objects": [
+      { "num": "1", "jp": "一冊（いっさつ）" },
+      { "num": "2", "jp": "二冊（にさつ）" },
+      { "num": "3", "jp": "三冊（さんさつ）" },
+      { "num": "4", "jp": "四冊（よんさつ）" },
+      { "num": "5", "jp": "五冊（ごさつ）" },
+      { "num": "6", "jp": "六冊（ろくさつ）" },
+      { "num": "7", "jp": "七冊（ななさつ）" },
+      { "num": "8", "jp": "八冊（はっさつ）" },
+      { "num": "9", "jp": "九冊（きゅうさつ）" },
+      { "num": "10", "jp": "十冊（じゅっさつ）" }
+    ]
+  },
+
+  "vocab": {
+    "time": [
+      { "jp": "今（いま）", "en": "now" },
+      { "jp": "今日（きょう）", "en": "today" },
+      { "jp": "昨日（きのう）", "en": "yesterday" },
+      { "jp": "明日（あした）", "en": "tomorrow" },
+      { "jp": "朝（あさ）", "en": "morning" },
+      { "jp": "昼（ひる）", "en": "noon" },
+      { "jp": "夜（よる）", "en": "night" },
+      { "jp": "先週（せんしゅう）", "en": "last week" },
+      { "jp": "今週（こんしゅう）", "en": "this week" },
+      { "jp": "来週（らいしゅう）", "en": "next week" },
+      { "jp": "平日（へいじつ）", "en": "weekdays" },
+      { "jp": "祝日（しゅくじつ）", "en": "holidays" },
+      { "jp": "さっき", "en": "a short while ago; just now" },
+      { "jp": "時間（じかん）がかかる", "en": "it takes time" },
+      { "jp": "すぐに", "en": "immediately" },
+      { "jp": "一晩中（ひとばんじゅう）", "en": "all night" },
+      { "jp": "一日中（いちにちじゅう）", "en": "whole day" },
+      { "jp": "前回（ぜんかい）", "en": "last time" },
+      { "jp": "将来（しょうらい）", "en": "future" },
+      { "jp": "さいしょ", "en": "beginning; outset; first" },
+      { "jp": "〜の終わり", "en": "end of" },
+      { "jp": "〜のはじめ", "en": "beginning of" },
+      { "jp": "季節（きせつ）", "en": "season" }
+    ],
+    "days_of_week": [
+      { "jp": "月曜日（げつようび）", "en": "Monday" },
+      { "jp": "火曜日（かようび）", "en": "Tuesday" },
+      { "jp": "水曜日（すいようび）", "en": "Wednesday" },
+      { "jp": "木曜日（もくようび）", "en": "Thursday" },
+      { "jp": "金曜日（きんようび）", "en": "Friday" },
+      { "jp": "土曜日（どようび）", "en": "Saturday" },
+      { "jp": "日曜日（にちようび）", "en": "Sunday" }
+    ],
+    "numbers": [
+      { "jp": "零・〇（れい・ゼロ）", "en": "0" },
+      { "jp": "一（いち）", "en": "1" },
+      { "jp": "二（に）", "en": "2" },
+      { "jp": "三（さん）", "en": "3" },
+      { "jp": "四（し・よん）", "en": "4" },
+      { "jp": "五（ご）", "en": "5" },
+      { "jp": "六（ろく）", "en": "6" },
+      { "jp": "七（しち・なな）", "en": "7" },
+      { "jp": "八（はち）", "en": "8" },
+      { "jp": "九（きゅう・く）", "en": "9" },
+      { "jp": "十（じゅう）", "en": "10" },
+      { "jp": "百（ひゃく）", "en": "100" },
+      { "jp": "千（せん）", "en": "1,000" },
+      { "jp": "万（まん）", "en": "10,000" },
+      { "jp": "半分（はんぶん）", "en": "half" },
+      { "jp": "〜ばい", "en": "x times as much" },
+      { "jp": "いくつか", "en": "some; a few" }
+    ],
+    "directions": [
+      { "jp": "右（みぎ）", "en": "right" },
+      { "jp": "左（ひだり）", "en": "left" },
+      { "jp": "真（ま）っすぐ", "en": "straight" },
+      { "jp": "前（まえ）", "en": "front" },
+      { "jp": "後（うし）ろ", "en": "back" },
+      { "jp": "上（うえ）", "en": "up / above" },
+      { "jp": "下（した）", "en": "down / below" },
+      { "jp": "中（なか）", "en": "inside" },
+      { "jp": "外（そと）", "en": "outside" },
+      { "jp": "隣（となり）", "en": "next to" },
+      { "jp": "北（きた）", "en": "north" },
+      { "jp": "南（みなみ）", "en": "south" },
+      { "jp": "真ん中（まんなか）", "en": "in the middle" }
+    ],
+    "colors": [
+      { "jp": "赤（あか）", "en": "red" },
+      { "jp": "青（あお）", "en": "blue" },
+      { "jp": "黄色（きいろ）", "en": "yellow" },
+      { "jp": "緑（みどり）", "en": "green" },
+      { "jp": "黒（くろ）", "en": "black" },
+      { "jp": "白（しろ）", "en": "white" },
+      { "jp": "茶色（ちゃいろ）", "en": "brown" },
+      { "jp": "ピンク", "en": "pink" },
+      { "jp": "オレンジ", "en": "orange" },
+      { "jp": "紫（むらさき）", "en": "purple" }
+    ],
+    "family": [
+      { "jp": "家族（かぞく）", "en": "family" },
+      { "jp": "父（ちち）・お父（とう）さん", "en": "father" },
+      { "jp": "母（はは）・お母（かあ）さん", "en": "mother" },
+      { "jp": "兄（あに）・お兄（にい）さん", "en": "older brother" },
+      { "jp": "姉（あね）・お姉（ねえ）さん", "en": "older sister" },
+      { "jp": "弟（おとうと）", "en": "younger brother" },
+      { "jp": "妹（いもうと）", "en": "younger sister" },
+      { "jp": "祖父（そふ）・おじいさん", "en": "grandfather" },
+      { "jp": "祖母（そぼ）・おばあさん", "en": "grandmother" },
+      { "jp": "旦那さん（だんなさん）", "en": "husband (others)" },
+      { "jp": "奥さん（おくさん）", "en": "wife (others)" }
+    ],
+    "descriptive_adjectives": [
+      { "jp": "ふつう", "en": "normal; ordinary; usual; average" },
+      { "jp": "普通（ふつう）", "en": "normal; ordinary; regular" },
+      { "jp": "安全（あんぜん）な", "en": "safe" },
+      { "jp": "遠い（とおい）", "en": "far away" },
+      { "jp": "特別（とくべつ）な", "en": "special" },
+      { "jp": "重（おも）い", "en": "heavy" },
+      { "jp": "軽い（かるい）", "en": "light (weight)" },
+      { "jp": "大切（たいせつ）な", "en": "important" },
+      { "jp": "大事（だいじ）", "en": "important" },
+      { "jp": "珍（めずら）しい", "en": "rare; uncommon" },
+      { "jp": "健康的（けんこうてき）な", "en": "healthy" },
+      { "jp": "新鮮（しんせん）な", "en": "fresh" },
+      { "jp": "ちょうどいい", "en": "just right" },
+      { "jp": "必要（ひつよう）な", "en": "necessary" },
+      { "jp": "乾燥（かんそう）している", "en": "dry" },
+      { "jp": "不便な（ふべんな）", "en": "inconvenient" },
+      { "jp": "硬い（かたい）", "en": "hard" },
+      { "jp": "柔らかい（やわらかい）", "en": "soft" },
+      { "jp": "いっぱい", "en": "full" },
+      { "jp": "明るい（あかるい）", "en": "bright" },
+      { "jp": "広い（ひろい）", "en": "wide" },
+      { "jp": "狭い（せまい）", "en": "narrow" },
+      { "jp": "快適（かいてき）な", "en": "comfortable" },
+      { "jp": "複雑（ふくざつ）", "en": "complicated" },
+      { "jp": "逆（ぎゃく）", "en": "opposite" },
+      { "jp": "生（なま）", "en": "raw" },
+      { "jp": "ヌルヌル（ぬるぬる）", "en": "slimy" }
+    ],
+    "emotions_feelings": [
+      { "jp": "羨ましい（うらやましい）", "en": "jealous (light-hearted)" },
+      { "jp": "心配（しんぱい）", "en": "worry; concern; anxiety" },
+      { "jp": "緊張（きんちょう）", "en": "tension; nervousness; stress" },
+      { "jp": "恥ずかしい（はずかし）", "en": "embarrassing" },
+      { "jp": "不安（ふあん）", "en": "anxious" },
+      { "jp": "安心（あんしん）", "en": "relief" },
+      { "jp": "感動（かんどう）する", "en": "to be moved (emotionally)" },
+      { "jp": "気まずい（きまずい）", "en": "awkward" },
+      { "jp": "疲れる（つかれる）", "en": "tired" }
+    ],
+    "actions_verbs": [
+      { "jp": "着く（つく）", "en": "to arrive" },
+      { "jp": "似る（にる）", "en": "to resemble; to look like" },
+      { "jp": "にている", "en": "to resemble; to look like" },
+      { "jp": "込む（こむ）", "en": "to be crowded" },
+      { "jp": "こんでいる", "en": "it is crowded" },
+      { "jp": "しらべる", "en": "to look up; research" },
+      { "jp": "聞（き）こえ", "en": "being able to hear" },
+      { "jp": "選ぶ（えらぶ）", "en": "to choose" },
+      { "jp": "考える（かんがえる）", "en": "to consider; think" },
+      { "jp": "かんがえている", "en": "I am considering; thinking" },
+      { "jp": "決める（きめる）", "en": "to decide" },
+      { "jp": "たいせつにする", "en": "to cherish" },
+      { "jp": "怒（おこ）る", "en": "to get angry; to get mad" },
+      { "jp": "送（おく）る", "en": "to send" },
+      { "jp": "思い出す（おもいだす）", "en": "to recall; to remember" },
+      { "jp": "盗（ぬ）すむ", "en": "to steal" },
+      { "jp": "世話（せわ）する", "en": "to take care" },
+      { "jp": "飽きる（あきる）", "en": "to get tired of; bored" },
+      { "jp": "慣（な）れる", "en": "to get used to; grow accustomed to" },
+      { "jp": "育（そだ）てる", "en": "to raise" },
+      { "jp": "かんじる", "en": "to feel" },
+      { "jp": "起（お）こる", "en": "to occur" },
+      { "jp": "勝つ（かつ）", "en": "to win" },
+      { "jp": "負ける（まける）", "en": "to lose" },
+      { "jp": "急ぐ（いそぐ）", "en": "to hurry" },
+      { "jp": "信じる（しんじる）", "en": "to believe" },
+      { "jp": "変わる（かわる）", "en": "to change (intransitive)" },
+      { "jp": "変える（かえる）", "en": "to change (transitive)" },
+      { "jp": "借りる（かりる）", "en": "to rent; to borrow" },
+      { "jp": "つづく", "en": "to continue" },
+      { "jp": "開ける（あける）", "en": "to open (transitive)" },
+      { "jp": "開く（あく）", "en": "to open (intransitive)" },
+      { "jp": "泊（と）まる", "en": "to stay over" },
+      { "jp": "通（とお）る", "en": "to go through" },
+      { "jp": "怠（なま）ける", "en": "to be lazy" },
+      { "jp": "貸（か）す", "en": "to lend" },
+      { "jp": "借（か）りる", "en": "to rent; to borrow" },
+      { "jp": "うまくいく", "en": "to go smoothly; to turn out well" },
+      { "jp": "目が覚める（めがさめる）", "en": "to awaken; to snap out of" },
+      { "jp": "かける", "en": "to put on; put on top of" },
+      { "jp": "弱（よわ）める", "en": "to weaken" },
+      { "jp": "立（た）てる", "en": "to make; to establish; to set up" },
+      { "jp": "予定（よてい）を たてる", "en": "to make plans" },
+      { "jp": "吐（は）く", "en": "to throw up; to vomit" },
+      { "jp": "増える（ふえる）", "en": "to increase" },
+      { "jp": "戻る（もどる）", "en": "to return; to come back" },
+      { "jp": "祝う（いわう）", "en": "to celebrate" },
+      { "jp": "あたためる", "en": "to heat; to warm" },
+      { "jp": "まぜる", "en": "to mix" },
+      { "jp": "足りる（たりる）", "en": "to be sufficient" }
+    ],
+    "abstract_concepts": [
+      { "jp": "理由（りゆう）", "en": "reason" },
+      { "jp": "生活（せいかつ）", "en": "life" },
+      { "jp": "世界（せかい）", "en": "world" },
+      { "jp": "政治（せいじ）", "en": "politics" },
+      { "jp": "思い出（おもいで）", "en": "memory" },
+      { "jp": "経験（けいけん）", "en": "experience" },
+      { "jp": "成功（せいこう）", "en": "success" },
+      { "jp": "失敗（しっぱい）", "en": "failure" },
+      { "jp": "品質（ひんしつ）", "en": "quality" },
+      {
+        "jp": "一生（いっしょう）に一度（いちど）",
+        "en": "once in a lifetime"
+      },
+      { "jp": "健康（けんこう）", "en": "health" },
+      { "jp": "健全（けんぜん）", "en": "healthy" },
+      { "jp": "情報（じょうほう）", "en": "information" },
+      { "jp": "伝統（でんとう）", "en": "tradition" },
+      { "jp": "伝統的（でんとうてき）", "en": "traditional" },
+      { "jp": "雰囲気（ふんいき）", "en": "atmosphere" },
+      { "jp": "習慣（しゅうかん）", "en": "habit" },
+      { "jp": "問題（もんだい）", "en": "problem" },
+      { "jp": "価値（かち）", "en": "worth; value" },
+      { "jp": "運が悪い（うんがわるい）", "en": "bad luck" }
+    ],
+    "grammar_patterns": [
+      { "jp": "〜が 得意です（とくい）", "en": "to be good at ~" },
+      { "jp": "〜が 苦手です（にがて）", "en": "to be bad at ~" },
+      { "jp": "みたい", "en": "-like; sort of; similar to" },
+      { "jp": "Vます＋やすい", "en": "easy to ~" },
+      { "jp": "Vます＋にくい", "en": "difficult to ~" },
+      { "jp": "〜ないでください", "en": "please don't ~" },
+      { "jp": "〜てください", "en": "please do ~" },
+      { "jp": "について", "en": "about" },
+      { "jp": "にくらべて", "en": "compared to" },
+      { "jp": "noun＋にとって", "en": "for (comparison)" },
+      {
+        "jp": "noun＋のために",
+        "en": "for (someone does something for someone)"
+      },
+      { "jp": "するverb＋ために", "en": "for (with verb)" }
+    ],
+    "people_work": [
+      { "jp": "店員（てんいん）", "en": "employee; shop staff" },
+      { "jp": "上司（じょうし）", "en": "boss" },
+      { "jp": "お年寄り（おとしより）", "en": "elderly" },
+      { "jp": "おとな", "en": "grown up; adult" }
+    ],
+    "places_locations": [
+      { "jp": "地元（じもと）", "en": "local" },
+      { "jp": "地域（ちいき）", "en": "region" },
+      { "jp": "近所（きんじょ）", "en": "neighborhood" },
+      { "jp": "景色（けしき）", "en": "scenery" },
+      { "jp": "風景（ふうけい）", "en": "landscape" },
+      { "jp": "住所（じゅうしょ）", "en": "address" },
+      { "jp": "行列（ぎょうれつ）", "en": "line; queue" }
+    ],
+    "miscellaneous": [
+      { "jp": "他（ほか）", "en": "other" },
+      { "jp": "別（べつ）", "en": "another" },
+      { "jp": "臭い（におい）", "en": "smell; scent; odor" },
+      { "jp": "よっぱらう", "en": "to be drunk" },
+      { "jp": "充分（じゅうぶん）", "en": "sufficient; enough" },
+      { "jp": "休憩（きゅうけい）", "en": "rest; break; intermission" },
+      { "jp": "更新（こうしん）", "en": "update" },
+      { "jp": "無料（むりょう）", "en": "free (cost)" },
+      { "jp": "お大事（だいじ）に", "en": "feel better; take care" },
+      { "jp": "楽（たの）しんで", "en": "enjoy" },
+      { "jp": "引越し（ひっこし）", "en": "moving (residence)" },
+      { "jp": "ぶっか", "en": "price" },
+      { "jp": "種類（しゅるい）", "en": "variety; kind; type" },
+      { "jp": "間違（まちが）い", "en": "wrong; mistake" },
+      { "jp": "正しい（ただしい）", "en": "correct" },
+      { "jp": "きをつける", "en": "to be careful" },
+      { "jp": "もったいない", "en": "too good to waste" },
+      { "jp": "応援（おうえん）する", "en": "to support; to cheer" },
+      { "jp": "船酔い（ふなよい）", "en": "seasickness" },
+      { "jp": "喧嘩（けんか）する", "en": "to quarrel; to fight" },
+      { "jp": "材料（ざいりょう）", "en": "material; ingredients" },
+      { "jp": "ざいりょう", "en": "material; ingredients" },
+      { "jp": "歯（は）ごたえ", "en": "chewy; texture" },
+      { "jp": "食感（しょっかん）", "en": "food texture" }
+    ]
+  },
+
+  "useful": {
+    "emergency": [
+      { "jp": "助（たす）けて！", "en": "Help!" },
+      {
+        "jp": "警察（けいさつ）を呼（よ）んでください",
+        "en": "Please call the police"
+      },
+      {
+        "jp": "救急車（きゅうきゅうしゃ）を呼（よ）んでください",
+        "en": "Please call an ambulance"
+      },
+      {
+        "jp": "病院（びょういん）はどこですか？",
+        "en": "Where is the hospital?"
+      },
+      { "jp": "具合（ぐあい）が悪（わる）いです", "en": "I don't feel well" },
+      { "jp": "痛（いた）いです", "en": "It hurts" },
+      { "jp": "薬（くすり）をください", "en": "Medicine please" }
+    ],
+    "transportation": [
+      { "jp": "駅（えき）はどこですか？", "en": "Where is the station?" },
+      { "jp": "〜までいくらですか？", "en": "How much to ~?" },
+      { "jp": "〜までお願（ねが）いします", "en": "To ~ please" },
+      { "jp": "ここで降（お）ります", "en": "I'm getting off here" },
+      { "jp": "タクシーを呼（よ）んでください", "en": "Please call a taxi" },
+      { "jp": "空港（くうこう）", "en": "airport" },
+      { "jp": "地下鉄（ちかてつ）", "en": "subway" },
+      { "jp": "電車（でんしゃ）", "en": "train" },
+      { "jp": "バス", "en": "bus" }
+    ],
+    "accommodation": [
+      { "jp": "予約（よやく）しています", "en": "I have a reservation" },
+      { "jp": "チェックインお願（ねが）いします", "en": "Check-in please" },
+      { "jp": "鍵（かぎ）をください", "en": "Key please" },
+      {
+        "jp": "Wi-Fiのパスワードは何（なん）ですか？",
+        "en": "What's the Wi-Fi password?"
+      },
+      {
+        "jp": "朝食（ちょうしょく）は何時（なんじ）ですか？",
+        "en": "What time is breakfast?"
+      },
+      { "jp": "タオルをください", "en": "Towels please" },
+      { "jp": "チェックアウトお願（ねが）いします", "en": "Check-out please" }
+    ],
+    "common_places": [
+      { "jp": "駅（えき）", "en": "station" },
+      { "jp": "空港（くうこう）", "en": "airport" },
+      { "jp": "ホテル", "en": "hotel" },
+      { "jp": "レストラン", "en": "restaurant" },
+      { "jp": "コンビニ", "en": "convenience store" },
+      { "jp": "トイレ", "en": "toilet / restroom" },
+      { "jp": "銀行（ぎんこう）", "en": "bank" },
+      { "jp": "郵便局（ゆうびんきょく）", "en": "post office" },
+      { "jp": "病院（びょういん）", "en": "hospital" },
+      { "jp": "薬局（やっきょく）", "en": "pharmacy" }
+    ],
+    "weather": [
+      { "jp": "天気（てんき）", "en": "weather" },
+      { "jp": "晴（は）れ", "en": "sunny" },
+      { "jp": "曇（くも）り", "en": "cloudy" },
+      { "jp": "雨（あめ）", "en": "rain" },
+      { "jp": "雪（ゆき）", "en": "snow" },
+      { "jp": "暑（あつ）い", "en": "hot" },
+      { "jp": "寒（さむ）い", "en": "cold" },
+      { "jp": "涼（すず）しい", "en": "cool" },
+      { "jp": "暖（あたた）かい", "en": "warm" }
+    ]
+  }
+}
