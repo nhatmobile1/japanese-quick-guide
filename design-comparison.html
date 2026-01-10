@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Quick Guide - Design Comparison</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ===========================================
+       SECTION A: SAGE GREEN ACCENT VARIATIONS
+       All use sage green (#5B8A72) as primary
+       with different complementary accents
+       =========================================== */
+
+    /* A1: Sage + Lavender (Current) */
+    [data-palette="sage-lavender"] {
+      --bg-primary: #FAFBF9;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F3F5F0;
+      --text-primary: #2D3A2E;
+      --text-secondary: #5A6B5D;
+      --text-tertiary: #8B9A8D;
+      --accent: #5B8A72;
+      --accent-soft: rgba(91, 138, 114, 0.1);
+      --accent-hover: #4A7B61;
+      --secondary: #9B8AA8;
+      --secondary-soft: rgba(155, 138, 168, 0.1);
+      --tertiary: #7BA4C4;
+      --border: #E4E8E0;
+      --border-strong: #D0D6CA;
+      --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --radius: 6px;
+    }
+
+    /* A2: Sage + Dusty Rose */
+    [data-palette="sage-rose"] {
+      --bg-primary: #FAFBF9;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F3F5F0;
+      --text-primary: #2D3A2E;
+      --text-secondary: #5A6B5D;
+      --text-tertiary: #8B9A8D;
+      --accent: #5B8A72;
+      --accent-soft: rgba(91, 138, 114, 0.1);
+      --accent-hover: #4A7B61;
+      --secondary: #C4A0A0;
+      --secondary-soft: rgba(196, 160, 160, 0.1);
+      --tertiary: #A8B0C4;
+      --border: #E4E8E0;
+      --border-strong: #D0D6CA;
+      --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --radius: 6px;
+    }
+
+    /* A3: Sage + Warm Gold */
+    [data-palette="sage-gold"] {
+      --bg-primary: #FAFBF9;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F3F5F0;
+      --text-primary: #2D3A2E;
+      --text-secondary: #5A6B5D;
+      --text-tertiary: #8B9A8D;
+      --accent: #5B8A72;
+      --accent-soft: rgba(91, 138, 114, 0.1);
+      --accent-hover: #4A7B61;
+      --secondary: #C4A85A;
+      --secondary-soft: rgba(196, 168, 90, 0.1);
+      --tertiary: #8B7355;
+      --border: #E4E8E0;
+      --border-strong: #D0D6CA;
+      --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --radius: 6px;
+    }
+
+    /* A4: Sage + Slate Blue */
+    [data-palette="sage-slate"] {
+      --bg-primary: #FAFBF9;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F3F5F0;
+      --text-primary: #2D3A2E;
+      --text-secondary: #5A6B5D;
+      --text-tertiary: #8B9A8D;
+      --accent: #5B8A72;
+      --accent-soft: rgba(91, 138, 114, 0.1);
+      --accent-hover: #4A7B61;
+      --secondary: #6B7A8A;
+      --secondary-soft: rgba(107, 122, 138, 0.1);
+      --tertiary: #A0B0C0;
+      --border: #E4E8E0;
+      --border-strong: #D0D6CA;
+      --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --radius: 6px;
+    }
+
+    /* A5: Sage + Warm Taupe */
+    [data-palette="sage-taupe"] {
+      --bg-primary: #FAFBF9;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F3F5F0;
+      --text-primary: #2D3A2E;
+      --text-secondary: #5A6B5D;
+      --text-tertiary: #8B9A8D;
+      --accent: #5B8A72;
+      --accent-soft: rgba(91, 138, 114, 0.1);
+      --accent-hover: #4A7B61;
+      --secondary: #9A8A7A;
+      --secondary-soft: rgba(154, 138, 122, 0.1);
+      --tertiary: #B8A090;
+      --border: #E4E8E0;
+      --border-strong: #D0D6CA;
+      --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --radius: 6px;
+    }
+
+    /* ===========================================
+       SECTION B: STUDY APP DESIGN STYLES
+       Optimized for focus, readability, calm
+       =========================================== */
+
+    /* B1: Minimal Scholar - Clean, distraction-free */
+    [data-palette="minimal-scholar"] {
+      --bg-primary: #FAFAFA;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F5F5F5;
+      --text-primary: #1A1A1A;
+      --text-secondary: #555555;
+      --text-tertiary: #888888;
+      --accent: #2D5A45;
+      --accent-soft: rgba(45, 90, 69, 0.08);
+      --accent-hover: #1D4A35;
+      --secondary: #666666;
+      --secondary-soft: rgba(102, 102, 102, 0.08);
+      --tertiary: #999999;
+      --border: #E8E8E8;
+      --border-strong: #D0D0D0;
+      --font-display: "DM Sans", sans-serif;
+      --radius: 4px;
+    }
+
+    /* B2: Warm Library - Cozy, book-inspired */
+    [data-palette="warm-library"] {
+      --bg-primary: #FAF8F5;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F5F0E8;
+      --text-primary: #2C2416;
+      --text-secondary: #5A4D3A;
+      --text-tertiary: #8A7A64;
+      --accent: #6B5344;
+      --accent-soft: rgba(107, 83, 68, 0.1);
+      --accent-hover: #5A4234;
+      --secondary: #8B7355;
+      --secondary-soft: rgba(139, 115, 85, 0.1);
+      --tertiary: #A89880;
+      --border: #E8E0D4;
+      --border-strong: #D4C8B8;
+      --font-display: "Playfair Display", serif;
+      --radius: 4px;
+    }
+
+    /* B3: Focus Mode - Dark, reduced eye strain */
+    [data-palette="focus-mode"] {
+      --bg-primary: #1A1D21;
+      --bg-secondary: #22262B;
+      --bg-tertiary: #2A2F35;
+      --text-primary: #E4E7EB;
+      --text-secondary: #A0A8B0;
+      --text-tertiary: #6B7280;
+      --accent: #7BA98D;
+      --accent-soft: rgba(123, 169, 141, 0.15);
+      --accent-hover: #8FBAA0;
+      --secondary: #6B8A9A;
+      --secondary-soft: rgba(107, 138, 154, 0.15);
+      --tertiary: #8A7A9A;
+      --border: #363B42;
+      --border-strong: #464C55;
+      --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --radius: 8px;
+    }
+
+    /* B4: Zen Garden - Japanese minimalism */
+    [data-palette="zen-garden"] {
+      --bg-primary: #F8F8F6;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F0F0EC;
+      --text-primary: #2A2A28;
+      --text-secondary: #5A5A58;
+      --text-tertiary: #8A8A88;
+      --accent: #4A6860;
+      --accent-soft: rgba(74, 104, 96, 0.08);
+      --accent-hover: #3A5850;
+      --secondary: #8A9A90;
+      --secondary-soft: rgba(138, 154, 144, 0.08);
+      --tertiary: #B0B8B4;
+      --border: #E0E0DC;
+      --border-strong: #C8C8C4;
+      --font-display: "Noto Sans JP", sans-serif;
+      --radius: 2px;
+    }
+
+    /* B5: Soft Cloud - Gentle, calming pastels */
+    [data-palette="soft-cloud"] {
+      --bg-primary: #F8FAFC;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F0F4F8;
+      --text-primary: #334155;
+      --text-secondary: #64748B;
+      --text-tertiary: #94A3B8;
+      --accent: #6B8FA3;
+      --accent-soft: rgba(107, 143, 163, 0.1);
+      --accent-hover: #5A7E92;
+      --secondary: #94A3B8;
+      --secondary-soft: rgba(148, 163, 184, 0.1);
+      --tertiary: #A8B8C8;
+      --border: #E2E8F0;
+      --border-strong: #CBD5E1;
+      --font-display: "DM Sans", sans-serif;
+      --radius: 8px;
+    }
+
+    /* ===========================================
+       SECTION C: EXPERIMENTAL/BOLD STYLES
+       Unique, distinctive aesthetics
+       =========================================== */
+
+    /* C1: Neo Brutalist - Raw, bold, unpolished */
+    [data-palette="neo-brutalist"] {
+      --bg-primary: #FFFEF0;
+      --bg-secondary: #FFFEF0;
+      --bg-tertiary: #F0EFE0;
+      --text-primary: #000000;
+      --text-secondary: #333333;
+      --text-tertiary: #666666;
+      --accent: #FF5C00;
+      --accent-soft: rgba(255, 92, 0, 0.1);
+      --accent-hover: #E05000;
+      --secondary: #0038FF;
+      --secondary-soft: rgba(0, 56, 255, 0.1);
+      --tertiary: #00C853;
+      --border: #000000;
+      --border-strong: #000000;
+      --font-display: "Space Mono", monospace;
+      --radius: 0px;
+    }
+
+    /* C2: Cyberpunk Neon - Dark with electric accents */
+    [data-palette="cyberpunk"] {
+      --bg-primary: #0A0A0F;
+      --bg-secondary: #12121A;
+      --bg-tertiary: #1A1A25;
+      --text-primary: #E0E0FF;
+      --text-secondary: #A0A0C0;
+      --text-tertiary: #606080;
+      --accent: #00F5D4;
+      --accent-soft: rgba(0, 245, 212, 0.15);
+      --accent-hover: #00D4B8;
+      --secondary: #F72585;
+      --secondary-soft: rgba(247, 37, 133, 0.15);
+      --tertiary: #7B2CF5;
+      --border: #2A2A3A;
+      --border-strong: #3A3A4A;
+      --font-display: "Space Mono", monospace;
+      --radius: 0px;
+    }
+
+    /* C3: Bauhaus Primary - Geometric, primary colors */
+    [data-palette="bauhaus"] {
+      --bg-primary: #F5F5F0;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #EAEAE5;
+      --text-primary: #1A1A1A;
+      --text-secondary: #4A4A4A;
+      --text-tertiary: #7A7A7A;
+      --accent: #E53935;
+      --accent-soft: rgba(229, 57, 53, 0.1);
+      --accent-hover: #C62828;
+      --secondary: #1565C0;
+      --secondary-soft: rgba(21, 101, 192, 0.1);
+      --tertiary: #FDD835;
+      --border: #1A1A1A;
+      --border-strong: #000000;
+      --font-display: "DM Sans", sans-serif;
+      --radius: 0px;
+    }
+
+    /* C4: Vaporwave - Retro digital aesthetic */
+    [data-palette="vaporwave"] {
+      --bg-primary: #1A1040;
+      --bg-secondary: #251555;
+      --bg-tertiary: #301A6A;
+      --text-primary: #FFE4F3;
+      --text-secondary: #C0A0D0;
+      --text-tertiary: #8060A0;
+      --accent: #FF71CE;
+      --accent-soft: rgba(255, 113, 206, 0.2);
+      --accent-hover: #FF4BC0;
+      --secondary: #01CDFE;
+      --secondary-soft: rgba(1, 205, 254, 0.2);
+      --tertiary: #05FFA1;
+      --border: #4A2080;
+      --border-strong: #6030A0;
+      --font-display: "Space Mono", monospace;
+      --radius: 0px;
+    }
+
+    /* C5: Newsprint Editorial - Magazine-inspired */
+    [data-palette="editorial"] {
+      --bg-primary: #FAFAF8;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F0F0EC;
+      --text-primary: #0A0A0A;
+      --text-secondary: #3A3A3A;
+      --text-tertiary: #6A6A6A;
+      --accent: #B82020;
+      --accent-soft: rgba(184, 32, 32, 0.08);
+      --accent-hover: #A01818;
+      --secondary: #0A0A0A;
+      --secondary-soft: rgba(10, 10, 10, 0.05);
+      --tertiary: #666666;
+      --border: #D0D0D0;
+      --border-strong: #0A0A0A;
+      --font-display: "Playfair Display", serif;
+      --radius: 0px;
+    }
+
+    /* ===========================================
+       BASE STYLES
+       =========================================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      transition: background 0.4s ease, color 0.3s ease;
+    }
+
+    /* Category Selector */
+    .category-selector {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      padding: 12px 16px;
+    }
+
+    [data-palette="focus-mode"] .category-selector,
+    [data-palette="cyberpunk"] .category-selector,
+    [data-palette="vaporwave"] .category-selector {
+      background: rgba(20, 20, 30, 0.98);
+      border-bottom-color: rgba(255,255,255,0.1);
+    }
+
+    .category-selector-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .category-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .category-tab {
+      padding: 8px 16px;
+      border: 1px solid #E0E0E0;
+      border-radius: 4px;
+      background: white;
+      color: #666;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .category-tab:hover {
+      border-color: #999;
+    }
+
+    .category-tab.active {
+      background: #1A1A1A;
+      border-color: #1A1A1A;
+      color: white;
+    }
+
+    [data-palette="focus-mode"] .category-tab,
+    [data-palette="cyberpunk"] .category-tab,
+    [data-palette="vaporwave"] .category-tab {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.7);
+    }
+
+    [data-palette="focus-mode"] .category-tab.active,
+    [data-palette="cyberpunk"] .category-tab.active,
+    [data-palette="vaporwave"] .category-tab.active {
+      background: white;
+      border-color: white;
+      color: #1A1A1A;
+    }
+
+    .palette-options {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .palette-btn {
+      padding: 6px 12px;
+      border: 2px solid #E0E0E0;
+      border-radius: 4px;
+      background: white;
+      color: #444;
+      font-size: 11px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .palette-btn:hover {
+      border-color: #999;
+    }
+
+    .palette-btn.active {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    [data-palette="focus-mode"] .palette-btn,
+    [data-palette="cyberpunk"] .palette-btn,
+    [data-palette="vaporwave"] .palette-btn {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.8);
+    }
+
+    .palette-preview {
+      display: flex;
+      gap: 2px;
+    }
+
+    .palette-preview span {
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+    }
+
+    .selector-spacer {
+      height: 110px;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 110px;
+      z-index: 100;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      transition: all 0.3s ease;
+    }
+
+    [data-palette="neo-brutalist"] header {
+      border-bottom: 3px solid var(--border);
+    }
+
+    .header-content {
+      max-width: 640px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      background: var(--accent);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+
+    [data-palette="neo-brutalist"] .logo-mark,
+    [data-palette="bauhaus"] .logo-mark,
+    [data-palette="editorial"] .logo-mark {
+      border: 3px solid var(--text-primary);
+    }
+
+    .logo-mark:hover {
+      transform: scale(1.05);
+    }
+
+    .logo-text {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+    }
+
+    .logo-subtitle {
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-top: 2px;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .icon-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    [data-palette="neo-brutalist"] .icon-btn,
+    [data-palette="bauhaus"] .icon-btn {
+      border: 2px solid var(--text-primary);
+    }
+
+    .icon-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .icon-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Search */
+    .search-container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 20px 24px 12px;
+    }
+
+    .search-wrapper {
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-tertiary);
+    }
+
+    .search-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    #search {
+      width: 100%;
+      padding: 12px 14px 12px 42px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    [data-palette="neo-brutalist"] #search,
+    [data-palette="bauhaus"] #search {
+      border: 2px solid var(--text-primary);
+    }
+
+    #search::placeholder {
+      color: var(--text-tertiary);
+    }
+
+    #search:focus {
+      border-color: var(--accent);
+    }
+
+    /* Tabs */
+    .tabs-container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    [data-palette="neo-brutalist"] .tabs-container,
+    [data-palette="bauhaus"] .tabs-container,
+    [data-palette="editorial"] .tabs-container {
+      border-bottom: 2px solid var(--border);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tab {
+      flex-shrink: 0;
+      padding: 12px 16px;
+      background: transparent;
+      border: none;
+      color: var(--text-tertiary);
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .tab::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transition: transform 0.2s ease;
+    }
+
+    [data-palette="neo-brutalist"] .tab::after,
+    [data-palette="bauhaus"] .tab::after {
+      height: 4px;
+      bottom: -2px;
+    }
+
+    .tab:hover {
+      color: var(--text-primary);
+    }
+
+    .tab.active {
+      color: var(--text-primary);
+    }
+
+    .tab.active::after {
+      transform: scaleX(1);
+    }
+
+    /* Content */
+    .content {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 24px 24px 120px;
+    }
+
+    .category {
+      margin-bottom: 40px;
+    }
+
+    .category-header {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .category-title {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-tertiary);
+    }
+
+    [data-palette="editorial"] .category-title {
+      font-size: 14px;
+      letter-spacing: 0.05em;
+    }
+
+    .category-count {
+      font-size: 10px;
+      color: var(--text-tertiary);
+      background: var(--bg-tertiary);
+      padding: 2px 6px;
+      border-radius: var(--radius);
+    }
+
+    /* Phrase Cards */
+    .phrase-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-bottom: 8px;
+      position: relative;
+    }
+
+    [data-palette="neo-brutalist"] .phrase-card,
+    [data-palette="bauhaus"] .phrase-card {
+      border: 2px solid var(--text-primary);
+      box-shadow: 4px 4px 0 var(--text-primary);
+    }
+
+    [data-palette="neo-brutalist"] .phrase-card:hover,
+    [data-palette="bauhaus"] .phrase-card:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 var(--text-primary);
+    }
+
+    .phrase-card:hover {
+      border-color: var(--border-strong);
+    }
+
+    .phrase-card.copied {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    .phrase-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .phrase-content {
+      flex: 1;
+    }
+
+    .japanese {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .english {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .note {
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+
+    .action-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius);
+      border: 1px solid transparent;
+      background: var(--bg-tertiary);
+      color: var(--text-tertiary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .action-btn:hover {
+      color: var(--accent);
+    }
+
+    .action-btn.active {
+      background: var(--accent);
+      color: white;
+    }
+
+    .action-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Counter Grid */
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+    [data-palette="neo-brutalist"] .counter-grid,
+    [data-palette="bauhaus"] .counter-grid {
+      border: 2px solid var(--text-primary);
+      gap: 2px;
+      background: var(--text-primary);
+    }
+
+    .counter-card {
+      background: var(--bg-secondary);
+      padding: 16px 8px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .counter-card:hover {
+      background: var(--bg-tertiary);
+    }
+
+    .counter-num {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .counter-jp {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 0.875rem;
+      color: var(--text-primary);
+      margin-top: 6px;
+    }
+
+    /* Tip Box */
+    .tip-box {
+      background: var(--secondary-soft);
+      border-left: 3px solid var(--secondary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+    }
+
+    [data-palette="neo-brutalist"] .tip-box,
+    [data-palette="bauhaus"] .tip-box {
+      border-left: 4px solid var(--secondary);
+      border-radius: 0;
+    }
+
+    .tip-text {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Palette Info */
+    .palette-info {
+      margin-top: 60px;
+      padding: 24px;
+      background: var(--bg-tertiary);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+
+    [data-palette="neo-brutalist"] .palette-info,
+    [data-palette="bauhaus"] .palette-info {
+      border: 2px solid var(--text-primary);
+    }
+
+    .palette-info h3 {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+
+    .palette-info .description {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .color-item {
+      text-align: center;
+    }
+
+    .color-swatch {
+      height: 50px;
+      border-radius: var(--radius);
+      margin-bottom: 6px;
+      border: 1px solid var(--border);
+    }
+
+    .color-name {
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .color-hex {
+      font-size: 9px;
+      color: var(--text-tertiary);
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body data-palette="sage-lavender">
+  <!-- Category Selector -->
+  <div class="category-selector">
+    <div class="category-selector-inner">
+      <div class="category-tabs">
+        <button class="category-tab active" onclick="setCategory('accents')">Sage Green Accents</button>
+        <button class="category-tab" onclick="setCategory('study')">Study App Styles</button>
+        <button class="category-tab" onclick="setCategory('experimental')">Experimental</button>
+      </div>
+      <div class="palette-options" id="palette-options">
+        <!-- Populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <div class="selector-spacer"></div>
+
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <div class="logo-mark">語</div>
+        <div>
+          <div class="logo-text">日本語</div>
+          <div class="logo-subtitle">Quick Guide</div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Toggle theme">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+        <button class="icon-btn" aria-label="Favorites">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-container">
+    <div class="search-wrapper">
+      <span class="search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </span>
+      <input type="text" id="search" placeholder="Search phrases...">
+    </div>
+  </div>
+
+  <div class="tabs-container">
+    <div class="tabs">
+      <button class="tab active">Restaurant</button>
+      <button class="tab">Shopping</button>
+      <button class="tab">Conversation</button>
+      <button class="tab">Counters</button>
+      <button class="tab">Vocabulary</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="category">
+      <div class="category-header">
+        <span class="category-title">Entering & Seating</span>
+        <span class="category-count">6 phrases</span>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-top">
+          <div class="phrase-content">
+            <div class="japanese">すみません、二人(ふたり)です</div>
+            <div class="english">Excuse me, two people please</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn" aria-label="Play audio">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+              </svg>
+            </button>
+            <button class="action-btn" aria-label="Add to favorites">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-top">
+          <div class="phrase-content">
+            <div class="japanese">予約(よやく)していません</div>
+            <div class="english">I don't have a reservation</div>
+            <div class="note">Use when asked about reservations</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+              </svg>
+            </button>
+            <button class="action-btn active">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-top">
+          <div class="phrase-content">
+            <div class="japanese">窓側(まどがわ)の席(せき)はありますか？</div>
+            <div class="english">Do you have a window seat?</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+              </svg>
+            </button>
+            <button class="action-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <div class="category-header">
+        <span class="category-title">General Objects (〜つ)</span>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-text">Use this counter for general objects, especially round or abstract things. Numbers 1-10 have special readings.</div>
+      </div>
+
+      <div class="counter-grid">
+        <div class="counter-card"><div class="counter-num">1</div><div class="counter-jp">ひとつ</div></div>
+        <div class="counter-card"><div class="counter-num">2</div><div class="counter-jp">ふたつ</div></div>
+        <div class="counter-card"><div class="counter-num">3</div><div class="counter-jp">みっつ</div></div>
+        <div class="counter-card"><div class="counter-num">4</div><div class="counter-jp">よっつ</div></div>
+        <div class="counter-card"><div class="counter-num">5</div><div class="counter-jp">いつつ</div></div>
+        <div class="counter-card"><div class="counter-num">6</div><div class="counter-jp">むっつ</div></div>
+        <div class="counter-card"><div class="counter-num">7</div><div class="counter-jp">ななつ</div></div>
+        <div class="counter-card"><div class="counter-num">8</div><div class="counter-jp">やっつ</div></div>
+        <div class="counter-card"><div class="counter-num">9</div><div class="counter-jp">ここのつ</div></div>
+        <div class="counter-card"><div class="counter-num">10</div><div class="counter-jp">とお</div></div>
+      </div>
+    </div>
+
+    <div class="palette-info" id="palette-info"></div>
+  </div>
+
+  <script>
+    const categories = {
+      accents: {
+        label: "Sage Green Accents",
+        description: "Different accent colors that complement Sage Green (#5B8A72)",
+        palettes: [
+          { id: 'sage-lavender', name: 'Lavender', colors: ['#5B8A72', '#9B8AA8', '#7BA4C4'], desc: 'Cool purple complement - current design' },
+          { id: 'sage-rose', name: 'Dusty Rose', colors: ['#5B8A72', '#C4A0A0', '#A8B0C4'], desc: 'Soft pink warmth without coral' },
+          { id: 'sage-gold', name: 'Warm Gold', colors: ['#5B8A72', '#C4A85A', '#8B7355'], desc: 'Earthy autumn warmth' },
+          { id: 'sage-slate', name: 'Slate Blue', colors: ['#5B8A72', '#6B7A8A', '#A0B0C0'], desc: 'Professional, muted tones' },
+          { id: 'sage-taupe', name: 'Warm Taupe', colors: ['#5B8A72', '#9A8A7A', '#B8A090'], desc: 'Natural, organic warmth' }
+        ]
+      },
+      study: {
+        label: "Study App Styles",
+        description: "Design styles optimized for focus, readability, and calm",
+        palettes: [
+          { id: 'minimal-scholar', name: 'Minimal Scholar', colors: ['#2D5A45', '#666666', '#999999'], desc: 'Clean, distraction-free minimalism' },
+          { id: 'warm-library', name: 'Warm Library', colors: ['#6B5344', '#8B7355', '#A89880'], desc: 'Cozy, book-inspired warmth' },
+          { id: 'focus-mode', name: 'Focus Mode', colors: ['#7BA98D', '#6B8A9A', '#8A7A9A'], desc: 'Dark theme for evening study' },
+          { id: 'zen-garden', name: 'Zen Garden', colors: ['#4A6860', '#8A9A90', '#B0B8B4'], desc: 'Japanese minimalist calm' },
+          { id: 'soft-cloud', name: 'Soft Cloud', colors: ['#6B8FA3', '#94A3B8', '#A8B8C8'], desc: 'Gentle, airy pastels' }
+        ]
+      },
+      experimental: {
+        label: "Experimental",
+        description: "Bold, distinctive design styles for a unique look",
+        palettes: [
+          { id: 'neo-brutalist', name: 'Neo Brutalist', colors: ['#FF5C00', '#0038FF', '#00C853'], desc: 'Raw, bold, no curves' },
+          { id: 'cyberpunk', name: 'Cyberpunk', colors: ['#00F5D4', '#F72585', '#7B2CF5'], desc: 'Dark with electric neons' },
+          { id: 'bauhaus', name: 'Bauhaus', colors: ['#E53935', '#1565C0', '#FDD835'], desc: 'Geometric primary colors' },
+          { id: 'vaporwave', name: 'Vaporwave', colors: ['#FF71CE', '#01CDFE', '#05FFA1'], desc: 'Retro digital nostalgia' },
+          { id: 'editorial', name: 'Editorial', colors: ['#B82020', '#0A0A0A', '#666666'], desc: 'Magazine/newspaper inspired' }
+        ]
+      }
+    };
+
+    let currentCategory = 'accents';
+
+    function setCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.category-tab').forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.textContent.includes(categories[cat].label.split(' ')[0])) {
+          tab.classList.add('active');
+        }
+      });
+      renderPaletteOptions();
+      // Set first palette in category
+      setPalette(categories[cat].palettes[0].id);
+    }
+
+    function renderPaletteOptions() {
+      const container = document.getElementById('palette-options');
+      const palettes = categories[currentCategory].palettes;
+
+      container.innerHTML = palettes.map(p => `
+        <button class="palette-btn" onclick="setPalette('${p.id}')" data-palette="${p.id}">
+          <div class="palette-preview">
+            ${p.colors.map(c => `<span style="background: ${c};"></span>`).join('')}
+          </div>
+          <span>${p.name}</span>
+        </button>
+      `).join('');
+    }
+
+    function setPalette(paletteId) {
+      document.body.setAttribute('data-palette', paletteId);
+
+      document.querySelectorAll('.palette-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-palette') === paletteId) {
+          btn.classList.add('active');
+        }
+      });
+
+      updatePaletteInfo(paletteId);
+    }
+
+    function updatePaletteInfo(paletteId) {
+      const cat = categories[currentCategory];
+      const palette = cat.palettes.find(p => p.id === paletteId);
+      const infoEl = document.getElementById('palette-info');
+
+      const style = getComputedStyle(document.body);
+      const colors = [
+        { name: 'Primary', hex: style.getPropertyValue('--accent').trim() },
+        { name: 'Secondary', hex: style.getPropertyValue('--secondary').trim() },
+        { name: 'Tertiary', hex: style.getPropertyValue('--tertiary').trim() },
+        { name: 'Background', hex: style.getPropertyValue('--bg-primary').trim() },
+        { name: 'Text', hex: style.getPropertyValue('--text-primary').trim() },
+        { name: 'Border', hex: style.getPropertyValue('--border').trim() }
+      ];
+
+      infoEl.innerHTML = `
+        <h3>${palette.name}</h3>
+        <p class="description">${palette.desc}</p>
+        <div class="color-grid">
+          ${colors.map(c => `
+            <div class="color-item">
+              <div class="color-swatch" style="background: ${c.hex};"></div>
+              <div class="color-name">${c.name}</div>
+              <div class="color-hex">${c.hex}</div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    // Tab switching
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+
+    // Card click feedback
+    document.querySelectorAll('.phrase-card, .counter-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('.action-btn')) return;
+        card.classList.add('copied');
+        setTimeout(() => card.classList.remove('copied'), 1000);
+      });
+    });
+
+    // Initialize
+    renderPaletteOptions();
+    setPalette('sage-lavender');
+  </script>
+</body>
+</html>
