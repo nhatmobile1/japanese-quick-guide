@@ -4,8 +4,8 @@
   "description": "Japanese language learning phrases and vocabulary app",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f8f6f3",
-  "theme_color": "#c45c48",
+  "background_color": "#FAFBF9",
+  "theme_color": "#5B8A72",
   "orientation": "portrait-primary",
   "scope": "/",
   "icons": [

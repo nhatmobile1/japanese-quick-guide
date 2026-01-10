@@ -10,7 +10,7 @@ export const metadata = {
   },
 
   // Theme color
-  themeColor: "#c45c48",
+  themeColor: "#5B8A72",
 
   // Icons
   icons: {
