@@ -232,7 +232,10 @@ export default function JapanesePhrases() {
         <div className="header-content">
           <div className="logo">
             <div className="logo-mark">語</div>
-            <div className="logo-text">日本語</div>
+            <div>
+              <div className="logo-text">日本語</div>
+              <div className="logo-subtitle">Quick Guide</div>
+            </div>
           </div>
           <div className="header-actions">
             <button 

@@ -1,31 +1,54 @@
 :root {
-  /* Color Palette - Soft & Subtle */
-  --bg-primary: #f8f6f3;
-  --bg-secondary: #fdfcfb;
-  --bg-tertiary: #f0ede8;
-  --bg-wash: linear-gradient(165deg, #f8f6f3 0%, #f5f2ed 50%, #f0ede8 100%);
-  --text-primary: #49453f;
-  --text-secondary: #6b6660;
-  --text-tertiary: #948e83;
-  --accent: #ad4835;
-  --accent-warm: #c45c48;
-  --accent-soft: rgba(173, 72, 53, 0.08);
-  --accent-softer: rgba(173, 72, 53, 0.04);
-  --accent-hover: #8f3a2a;
-  --accent-glow: rgba(173, 72, 53, 0.12);
-  --border: rgba(73, 69, 63, 0.08);
-  --border-strong: rgba(73, 69, 63, 0.12);
-  --ink: #49453f;
-  --paper: #fdfcfb;
-  --shadow-subtle: 0 1px 3px rgba(73, 69, 63, 0.03), 0 4px 12px rgba(73, 69, 63, 0.04);
-  --shadow-medium: 0 2px 8px rgba(73, 69, 63, 0.06), 0 8px 24px rgba(73, 69, 63, 0.08);
-  --shadow-elevated: 0 4px 16px rgba(73, 69, 63, 0.08), 0 16px 48px rgba(73, 69, 63, 0.12);
-  --shadow-glow: 0 0 40px rgba(196, 92, 72, 0.08);
-  --radius: 12px;
-  --radius-lg: 20px;
-  --radius-xl: 28px;
+  /*
+    Color Palette: "Ghibli Garden"
+    Inspired by Studio Ghibli's natural, soft color palettes
+    - Easy on eyes for long study/reading sessions
+    - Calm but focused - promotes productivity without drowsiness
+    - Sage greens, soft sky blues, warm clay pinks
+  */
 
-  /* Typography - Original Fonts */
+  /* Background - soft warm white like Ghibli skies */
+  --bg-primary: #FAFBF9;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #F3F5F0;
+  --bg-wash: linear-gradient(165deg, #FAFBF9 0%, #F5F7F3 50%, #F3F5F0 100%);
+
+  /* Text - warm charcoal, not harsh black */
+  --text-primary: #2D3A2E;
+  --text-secondary: #5A6B5D;
+  --text-tertiary: #8B9A8D;
+
+  /* Primary accent - Ghibli sage green (forest/nature) */
+  --accent: #5B8A72;
+  --accent-warm: #6B9A82;
+  --accent-soft: rgba(91, 138, 114, 0.1);
+  --accent-softer: rgba(91, 138, 114, 0.05);
+  --accent-hover: #4A7B61;
+  --accent-glow: rgba(91, 138, 114, 0.12);
+
+  /* Secondary - soft sky blue (Ghibli sky) */
+  --secondary: #7BA4C4;
+  --secondary-soft: rgba(123, 164, 196, 0.1);
+
+  /* Tertiary - warm clay pink (Ghibli sunset/warmth) */
+  --tertiary: #D4A5A5;
+  --tertiary-soft: rgba(212, 165, 165, 0.1);
+
+  --border: #E4E8E0;
+  --border-strong: #D0D6CA;
+  --ink: #2D3A2E;
+  --paper: #FFFFFF;
+
+  --shadow-subtle: 0 1px 3px rgba(45, 58, 46, 0.04), 0 4px 12px rgba(45, 58, 46, 0.04);
+  --shadow-medium: 0 2px 8px rgba(45, 58, 46, 0.06), 0 8px 24px rgba(45, 58, 46, 0.06);
+  --shadow-elevated: 0 4px 16px rgba(45, 58, 46, 0.08), 0 16px 48px rgba(45, 58, 46, 0.08);
+  --shadow-glow: 0 0 40px rgba(91, 138, 114, 0.1);
+
+  --radius: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+
+  /* Typography */
   --font-jp: "Noto Sans JP", sans-serif;
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
@@ -40,27 +63,38 @@
 }
 
 [data-theme="dark"] {
-  --bg-primary: #1a1917;
-  --bg-secondary: #242320;
-  --bg-tertiary: #2e2d2a;
-  --bg-wash: linear-gradient(165deg, #1a1917 0%, #1f1e1c 50%, #242320 100%);
-  --text-primary: #e8e6e3;
-  --text-secondary: #a8a8a8;
-  --text-tertiary: #6b6b6b;
-  --accent: #e38972;
-  --accent-warm: #eba392;
-  --accent-soft: rgba(227, 137, 114, 0.1);
-  --accent-softer: rgba(227, 137, 114, 0.05);
-  --accent-hover: #d87d66;
-  --accent-glow: rgba(227, 137, 114, 0.12);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.12);
-  --ink: #e8e6e3;
-  --paper: #242320;
+  /* Dark mode - forest at dusk */
+  --bg-primary: #1A1F1A;
+  --bg-secondary: #232823;
+  --bg-tertiary: #2A302A;
+  --bg-wash: linear-gradient(165deg, #1A1F1A 0%, #1E241E 50%, #232823 100%);
+
+  --text-primary: #E8EDE8;
+  --text-secondary: #A8B5A8;
+  --text-tertiary: #6B7A6B;
+
+  --accent: #7BA98D;
+  --accent-warm: #8BBAA0;
+  --accent-soft: rgba(123, 169, 141, 0.12);
+  --accent-softer: rgba(123, 169, 141, 0.06);
+  --accent-hover: #8FBAA0;
+  --accent-glow: rgba(123, 169, 141, 0.15);
+
+  --secondary: #8BB4D0;
+  --secondary-soft: rgba(139, 180, 208, 0.12);
+
+  --tertiary: #D4B5B5;
+  --tertiary-soft: rgba(212, 181, 181, 0.12);
+
+  --border: #3A423A;
+  --border-strong: #4A524A;
+  --ink: #E8EDE8;
+  --paper: #232823;
+
   --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(0, 0, 0, 0.12);
   --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.15);
   --shadow-elevated: 0 4px 16px rgba(0, 0, 0, 0.25), 0 16px 48px rgba(0, 0, 0, 0.2);
-  --shadow-glow: 0 0 40px rgba(227, 137, 114, 0.1);
+  --shadow-glow: 0 0 40px rgba(123, 169, 141, 0.12);
 }
 
 * {
@@ -86,53 +120,21 @@ body {
   overflow-x: hidden;
 }
 
-/* Washi paper texture overlay */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.04' numOctaves='5' stitchTiles='stitch' result='noise'/%3E%3CfeDiffuseLighting in='noise' lighting-color='%23fff' surfaceScale='1.5'%3E%3CfeDistantLight azimuth='45' elevation='60'/%3E%3C/feDiffuseLighting%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper)'/%3E%3C/svg%3E");
-  opacity: 0.025;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Subtle ink wash gradient accent */
-body::after {
-  content: "";
-  position: fixed;
-  top: -50%;
-  right: -30%;
-  width: 80%;
-  height: 100%;
-  background: radial-gradient(ellipse at center, var(--accent-glow) 0%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.5;
-}
-
-[data-theme="dark"] body::after {
-  opacity: 0.3;
-}
-
 /* Header */
 header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: linear-gradient(to bottom, var(--bg-primary) 0%, rgba(247, 245, 240, 0.95) 100%);
+  background: linear-gradient(to bottom, var(--bg-primary) 0%, rgba(250, 251, 249, 0.95) 100%);
   border-bottom: 1px solid var(--border);
-  padding: 20px 24px;
+  padding: 16px 24px;
   transition: background var(--transition), border var(--transition);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
 }
 
 [data-theme="dark"] header {
-  background: linear-gradient(to bottom, var(--bg-primary) 0%, rgba(20, 19, 17, 0.95) 100%);
+  background: linear-gradient(to bottom, var(--bg-primary) 0%, rgba(26, 31, 26, 0.95) 100%);
 }
 
 .header-content {
@@ -147,44 +149,39 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .logo-mark {
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
-  border-radius: 14px;
+  width: 40px;
+  height: 40px;
+  background: var(--accent);
+  border-radius: var(--radius);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-family: var(--font-jp);
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
   transition: transform var(--transition), box-shadow var(--transition);
-  box-shadow: 0 4px 12px var(--accent-soft), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .logo-mark:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 16px var(--accent-glow), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .logo-text {
   font-family: var(--font-jp);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: -0.02em;
   color: var(--text-primary);
-  position: relative;
 }
 
-.logo-text::after {
-  content: "Quick Guide";
-  display: block;
+.logo-subtitle {
   font-family: var(--font-body);
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;

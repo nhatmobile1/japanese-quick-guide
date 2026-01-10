@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Quick Guide - Design Mockup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /*
+      Design Direction: "Ghibli Garden"
+      - Inspired by Studio Ghibli's natural, soft color palettes
+      - Sage greens, warm sky blues, soft clay pinks
+      - Easy on eyes for long study sessions
+      - Calm but focused - promotes productivity without drowsiness
+      - Light, airy backgrounds with gentle color accents
+    */
+
+    :root {
+      /* Background - soft warm white like Ghibli skies */
+      --bg-primary: #FAFBF9;
+      --bg-secondary: #FFFFFF;
+      --bg-tertiary: #F3F5F0;
+
+      /* Text - warm charcoal, not harsh black */
+      --text-primary: #2D3A2E;
+      --text-secondary: #5A6B5D;
+      --text-tertiary: #8B9A8D;
+
+      /* Primary accent - Ghibli sage green (forest/nature) */
+      --accent: #5B8A72;
+      --accent-soft: rgba(91, 138, 114, 0.1);
+      --accent-hover: #4A7B61;
+      --accent-dark: #3D6B52;
+
+      /* Secondary - soft sky blue (Ghibli sky) */
+      --secondary: #7BA4C4;
+      --secondary-soft: rgba(123, 164, 196, 0.1);
+
+      /* Tertiary - warm clay pink (Ghibli sunset/warmth) */
+      --tertiary: #D4A5A5;
+      --tertiary-soft: rgba(212, 165, 165, 0.1);
+
+      --border: #E4E8E0;
+      --border-strong: #D0D6CA;
+
+      --shadow-sm: 0 1px 3px rgba(45, 58, 46, 0.04);
+      --shadow-md: 0 4px 12px rgba(45, 58, 46, 0.06);
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+
+      --font-jp: "Noto Sans JP", sans-serif;
+      --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+      --transition: 0.2s ease;
+    }
+
+    [data-theme="dark"] {
+      /* Dark mode - forest at dusk */
+      --bg-primary: #1A1F1A;
+      --bg-secondary: #232823;
+      --bg-tertiary: #2A302A;
+
+      --text-primary: #E8EDE8;
+      --text-secondary: #A8B5A8;
+      --text-tertiary: #6B7A6B;
+
+      --accent: #7BA98D;
+      --accent-soft: rgba(123, 169, 141, 0.12);
+      --accent-hover: #8FBAA0;
+      --accent-dark: #6B9A7D;
+
+      --secondary: #8BB4D0;
+      --secondary-soft: rgba(139, 180, 208, 0.12);
+
+      --tertiary: #D4B5B5;
+      --tertiary-soft: rgba(212, 181, 181, 0.12);
+
+      --border: #3A423A;
+      --border-strong: #4A524A;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header - Sharp, editorial feel */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+    }
+
+    .header-content {
+      max-width: 640px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Logo mark - inspired by hanko stamps */
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      background: var(--accent);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: var(--font-jp);
+      font-size: 20px;
+      font-weight: 700;
+      transition: transform var(--transition);
+    }
+
+    .logo-mark:hover {
+      transform: scale(1.05);
+    }
+
+    .logo-text {
+      font-family: var(--font-jp);
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+    }
+
+    .logo-subtitle {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-top: 2px;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .icon-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .icon-btn:hover {
+      border-color: var(--text-primary);
+      color: var(--text-primary);
+    }
+
+    .icon-btn.active {
+      background: var(--text-primary);
+      border-color: var(--text-primary);
+      color: var(--bg-secondary);
+    }
+
+    .icon-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Search - Clean, minimal */
+    .search-container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 20px 24px 12px;
+    }
+
+    .search-wrapper {
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-tertiary);
+    }
+
+    .search-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    #search {
+      width: 100%;
+      padding: 12px 14px 12px 42px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 14px;
+      outline: none;
+      transition: all var(--transition);
+    }
+
+    #search::placeholder {
+      color: var(--text-tertiary);
+    }
+
+    #search:focus {
+      border-color: var(--text-primary);
+    }
+
+    /* Tabs - Underline style, editorial */
+    .tabs-container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tab {
+      flex-shrink: 0;
+      padding: 12px 16px;
+      background: transparent;
+      border: none;
+      color: var(--text-tertiary);
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all var(--transition);
+      position: relative;
+    }
+
+    .tab::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transition: transform var(--transition);
+    }
+
+    .tab:hover {
+      color: var(--text-primary);
+    }
+
+    .tab.active {
+      color: var(--text-primary);
+    }
+
+    .tab.active::after {
+      transform: scaleX(1);
+    }
+
+    /* Content */
+    .content {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 24px 24px 120px;
+    }
+
+    /* Category Headers - Strong typography */
+    .category {
+      margin-bottom: 40px;
+    }
+
+    .category-header {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .category-title {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-tertiary);
+    }
+
+    .category-count {
+      font-size: 10px;
+      color: var(--text-tertiary);
+      background: var(--bg-tertiary);
+      padding: 2px 6px;
+      border-radius: 2px;
+    }
+
+    /* Phrase Cards - Clean, structured */
+    .phrase-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      cursor: pointer;
+      transition: all var(--transition);
+      margin-bottom: 8px;
+      position: relative;
+    }
+
+    .phrase-card:hover {
+      border-color: var(--border-strong);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .phrase-card:active {
+      transform: scale(0.995);
+    }
+
+    .phrase-card.copied {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    .phrase-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .phrase-content {
+      flex: 1;
+    }
+
+    .japanese {
+      font-family: var(--font-jp);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .english {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .note {
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    /* Action buttons */
+    .card-actions {
+      display: flex;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+
+    .action-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      background: var(--bg-tertiary);
+      color: var(--text-tertiary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .action-btn:hover {
+      color: var(--text-primary);
+      background: var(--bg-tertiary);
+    }
+
+    .action-btn.active {
+      background: var(--accent);
+      color: white;
+    }
+
+    .action-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Counter Grid */
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+    .counter-card {
+      background: var(--bg-secondary);
+      padding: 16px 8px;
+      text-align: center;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .counter-card:hover {
+      background: var(--bg-tertiary);
+    }
+
+    .counter-num {
+      font-family: var(--font-body);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .counter-jp {
+      font-family: var(--font-jp);
+      font-size: 0.875rem;
+      color: var(--text-primary);
+      margin-top: 6px;
+    }
+
+    /* Vocab Cards - Horizontal layout */
+    .vocab-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      cursor: pointer;
+      transition: all var(--transition);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 6px;
+    }
+
+    .vocab-card:hover {
+      border-color: var(--border-strong);
+    }
+
+    .vocab-content {
+      flex: 1;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .vocab-jp {
+      font-family: var(--font-jp);
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .vocab-en {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    /* Tip Box */
+    .tip-box {
+      background: var(--secondary-soft);
+      border-left: 3px solid var(--secondary);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+    }
+
+    .tip-text {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--text-primary);
+      color: var(--bg-primary);
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      font-weight: 500;
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Theme Toggle Demo */
+    .theme-section {
+      margin-top: 60px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .theme-section h3 {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-tertiary);
+      margin-bottom: 16px;
+    }
+
+    .theme-toggle-demo {
+      display: flex;
+      gap: 12px;
+    }
+
+    .theme-btn {
+      padding: 10px 20px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .theme-btn:hover {
+      border-color: var(--text-primary);
+      color: var(--text-primary);
+    }
+
+    .theme-btn.active {
+      background: var(--text-primary);
+      border-color: var(--text-primary);
+      color: var(--bg-secondary);
+    }
+
+    /* Design Notes Section */
+    .design-notes {
+      margin-top: 60px;
+      padding: 24px;
+      background: var(--bg-tertiary);
+      border-radius: var(--radius-md);
+    }
+
+    .design-notes h3 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    .design-notes ul {
+      list-style: none;
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    .design-notes li::before {
+      content: "—";
+      margin-right: 8px;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <div class="logo-mark">語</div>
+        <div>
+          <div class="logo-text">日本語</div>
+          <div class="logo-subtitle">Quick Guide</div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Toggle theme" onclick="toggleTheme()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+        <button class="icon-btn" aria-label="Favorites">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-container">
+    <div class="search-wrapper">
+      <span class="search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </span>
+      <input type="text" id="search" placeholder="Search phrases...">
+    </div>
+  </div>
+
+  <div class="tabs-container">
+    <div class="tabs">
+      <button class="tab active">Restaurant</button>
+      <button class="tab">Shopping</button>
+      <button class="tab">Conversation</button>
+      <button class="tab">Counters</button>
+      <button class="tab">Vocabulary</button>
+      <button class="tab">Useful</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- Phrase Cards Section -->
+    <div class="category">
+      <div class="category-header">
+        <span class="category-title">Entering & Seating</span>
+        <span class="category-count">6 phrases</span>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-top">
+          <div class="phrase-content">
+            <div class="japanese">すみません、二人(ふたり)です</div>
+            <div class="english">Excuse me, two people please</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn" aria-label="Play audio">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+              </svg>
+            </button>
+            <button class="action-btn" aria-label="Add to favorites">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-top">
+          <div class="phrase-content">
+            <div class="japanese">予約(よやく)していません</div>
+            <div class="english">I don't have a reservation</div>
+            <div class="note">Use when asked about reservations</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+              </svg>
+            </button>
+            <button class="action-btn active">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-top">
+          <div class="phrase-content">
+            <div class="japanese">窓側(まどがわ)の席(せき)はありますか？</div>
+            <div class="english">Do you have a window seat?</div>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+              </svg>
+            </button>
+            <button class="action-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Counter Section -->
+    <div class="category">
+      <div class="category-header">
+        <span class="category-title">General Objects (〜つ)</span>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-text">Use this counter for general objects, especially round or abstract things. Numbers 1-10 have special readings.</div>
+      </div>
+
+      <div class="counter-grid">
+        <div class="counter-card">
+          <div class="counter-num">1</div>
+          <div class="counter-jp">ひとつ</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-num">2</div>
+          <div class="counter-jp">ふたつ</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-num">3</div>
+          <div class="counter-jp">みっつ</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-num">4</div>
+          <div class="counter-jp">よっつ</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-num">5</div>
+          <div class="counter-jp">いつつ</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-num">6</div>
+          <div class="counter-jp">むっつ</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-num">7</div>
+          <div class="counter-jp">ななつ</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-num">8</div>
+          <div class="counter-jp">やっつ</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-num">9</div>
+          <div class="counter-jp">ここのつ</div>
+        </div>
+        <div class="counter-card">
+          <div class="counter-num">10</div>
+          <div class="counter-jp">とお</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vocab Section -->
+    <div class="category">
+      <div class="category-header">
+        <span class="category-title">Colors</span>
+        <span class="category-count">8 words</span>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-content">
+          <span class="vocab-jp">赤(あか)</span>
+          <span class="vocab-en">Red</span>
+        </div>
+        <div class="card-actions">
+          <button class="action-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-content">
+          <span class="vocab-jp">青(あお)</span>
+          <span class="vocab-en">Blue</span>
+        </div>
+        <div class="card-actions">
+          <button class="action-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-content">
+          <span class="vocab-jp">白(しろ)</span>
+          <span class="vocab-en">White</span>
+        </div>
+        <div class="card-actions">
+          <button class="action-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-content">
+          <span class="vocab-jp">黒(くろ)</span>
+          <span class="vocab-en">Black</span>
+        </div>
+        <div class="card-actions">
+          <button class="action-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Theme Toggle Demo -->
+    <div class="theme-section">
+      <h3>Theme Preview</h3>
+      <div class="theme-toggle-demo">
+        <button class="theme-btn active" onclick="setTheme('light')">Light</button>
+        <button class="theme-btn" onclick="setTheme('dark')">Dark</button>
+      </div>
+    </div>
+
+    <!-- Color Palette Swatches -->
+    <div class="design-notes" style="margin-top: 40px;">
+      <h3>Color Palette</h3>
+      <div style="display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap;">
+        <div style="text-align: center;">
+          <div style="width: 60px; height: 60px; background: #5B8A72; border-radius: 6px; margin-bottom: 6px;"></div>
+          <div style="font-size: 10px; color: var(--text-secondary);">Sage Green</div>
+          <div style="font-size: 9px; color: var(--text-tertiary);">#5B8A72</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 60px; height: 60px; background: #4A7B61; border-radius: 6px; margin-bottom: 6px;"></div>
+          <div style="font-size: 10px; color: var(--text-secondary);">Deep Sage</div>
+          <div style="font-size: 9px; color: var(--text-tertiary);">#4A7B61</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 60px; height: 60px; background: #7BA4C4; border-radius: 6px; margin-bottom: 6px;"></div>
+          <div style="font-size: 10px; color: var(--text-secondary);">Sky Blue</div>
+          <div style="font-size: 9px; color: var(--text-tertiary);">#7BA4C4</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 60px; height: 60px; background: #D4A5A5; border-radius: 6px; margin-bottom: 6px;"></div>
+          <div style="font-size: 10px; color: var(--text-secondary);">Clay Pink</div>
+          <div style="font-size: 9px; color: var(--text-tertiary);">#D4A5A5</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 60px; height: 60px; background: #2D3A2E; border-radius: 6px; margin-bottom: 6px;"></div>
+          <div style="font-size: 10px; color: var(--text-secondary);">Charcoal</div>
+          <div style="font-size: 9px; color: var(--text-tertiary);">#2D3A2E</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 60px; height: 60px; background: #FAFBF9; border: 1px solid #E4E8E0; border-radius: 6px; margin-bottom: 6px;"></div>
+          <div style="font-size: 10px; color: var(--text-secondary);">Warm White</div>
+          <div style="font-size: 9px; color: var(--text-tertiary);">#FAFBF9</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Design Notes -->
+    <div class="design-notes">
+      <h3>Design Direction: "Ghibli Garden"</h3>
+      <ul>
+        <li>Sage green primary (#5B8A72) - forest/nature inspired, calming yet focused</li>
+        <li>Soft sky blue secondary (#7BA4C4) - like Ghibli's painted skies</li>
+        <li>Warm clay pink tertiary (#D4A5A5) - sunset warmth, gentle accent</li>
+        <li>Warm white backgrounds (#FAFBF9) - easy on eyes for long reading</li>
+        <li>Charcoal text (#2D3A2E) - softer than pure black, less eye strain</li>
+        <li>Slightly rounded corners (6px) - friendly but not bubbly</li>
+        <li>Clean underline tabs - focused, not distracting</li>
+        <li>No warm terracotta/coral - avoids AI slop aesthetic</li>
+        <li>No cream backgrounds - fresher, more natural feel</li>
+        <li>Promotes calm productivity - not sleepy, not anxious</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="toast" style="display: none;">Copied to clipboard</div>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      updateThemeButtons(newTheme);
+    }
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'dark' : '');
+      updateThemeButtons(theme);
+    }
+
+    function updateThemeButtons(theme) {
+      document.querySelectorAll('.theme-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.textContent.toLowerCase() === theme) {
+          btn.classList.add('active');
+        }
+      });
+    }
+
+    // Tab switching
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+
+    // Card click feedback
+    document.querySelectorAll('.phrase-card, .vocab-card, .counter-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('.action-btn')) return;
+        card.classList.add('copied');
+        setTimeout(() => card.classList.remove('copied'), 1000);
+      });
+    });
+  </script>
+</body>
+</html>
