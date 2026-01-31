@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "日本語 Japanese Phrases",
+  title: "Japanese Quick Guide",
   description: "Japanese language learning phrases and vocabulary",
 
   // Apple Web App
@@ -9,8 +9,8 @@ export const metadata = {
     title: "日本語",
   },
 
-  // Theme color
-  themeColor: "#5B8A72",
+  // Theme color - Japanese Indigo (Aizome)
+  themeColor: "#3d5a80",
 
   // Icons
   icons: {
