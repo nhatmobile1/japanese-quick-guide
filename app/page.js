@@ -385,6 +385,11 @@ export default function JapanesePhrases() {
             <div className="category-header">
               <span className="category-title">People (〜人（にん）)</span>
             </div>
+            <div className="tip-box">
+              <div className="tip-text">
+                1-2 people use special readings: ひとり, ふたり. From 3+, use regular numbers with にん.
+              </div>
+            </div>
             <div className="counter-grid">
               {phrasesData.counters.people.map((counter, index) => (
                 <CounterCard key={index} {...counter} />

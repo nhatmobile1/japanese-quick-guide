@@ -416,7 +416,7 @@ header {
   height: 2px;
   background: var(--accent);
   transform: scaleX(0);
-  transition: transform var(--transition-fast);
+  transition: transform 0.25s var(--ease-out-expo);
 }
 
 .tab:hover {
@@ -465,6 +465,53 @@ main {
   }
 }
 
+/* Staggered card reveal animation */
+@keyframes cardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section.active .phrase-card,
+.section.active .vocab-card,
+.section.active .counter-grid,
+.section.active .tip-box {
+  opacity: 0;
+  animation: cardReveal 0.4s var(--ease-out-expo) forwards;
+}
+
+.section.active .phrase-card:nth-child(1),
+.section.active .vocab-card:nth-child(1),
+.section.active .tip-box:nth-child(1),
+.section.active .counter-grid:nth-child(1) { animation-delay: 0ms; }
+
+.section.active .phrase-card:nth-child(2),
+.section.active .vocab-card:nth-child(2),
+.section.active .tip-box:nth-child(2),
+.section.active .counter-grid:nth-child(2) { animation-delay: 40ms; }
+
+.section.active .phrase-card:nth-child(3),
+.section.active .vocab-card:nth-child(3),
+.section.active .tip-box:nth-child(3),
+.section.active .counter-grid:nth-child(3) { animation-delay: 80ms; }
+
+.section.active .phrase-card:nth-child(4),
+.section.active .vocab-card:nth-child(4) { animation-delay: 120ms; }
+
+.section.active .phrase-card:nth-child(5),
+.section.active .vocab-card:nth-child(5) { animation-delay: 160ms; }
+
+.section.active .phrase-card:nth-child(6),
+.section.active .vocab-card:nth-child(6) { animation-delay: 200ms; }
+
+.section.active .phrase-card:nth-child(n+7),
+.section.active .vocab-card:nth-child(n+7) { animation-delay: 240ms; }
+
 /* Category Headers - Strong typography */
 .category {
   margin-bottom: var(--space-8);
@@ -488,13 +535,25 @@ main {
   color: var(--text-tertiary);
 }
 
-/* Tip Box - Vermillion accent */
+/* Tip Box - Vermillion accent (no left-border pattern) */
 .tip-box {
-  background: var(--vermillion-light);
-  border-left: 2px solid var(--vermillion);
-  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--vermillion-soft);
+  border: 1px solid var(--vermillion);
+  border-radius: var(--radius);
   padding: var(--space-3) var(--space-4);
   margin-bottom: var(--space-4);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.tip-box::before {
+  content: "注";
+  font-family: var(--font-jp);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--vermillion);
+  flex-shrink: 0;
 }
 
 .tip-text {
