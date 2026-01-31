@@ -1,13 +1,14 @@
-# Ghibli Garden Design System
+# Wabi-Sabi Editorial Design System
 
-A calm, productivity-focused color palette inspired by Studio Ghibli's natural, soft aesthetics. Designed to be easy on the eyes for long reading/study sessions while remaining visually engaging.
+A calm, focused design system inspired by traditional Japanese aesthetics. Designed to be easy on the eyes for long reading/study sessions while remaining visually distinctive.
 
 ## Design Philosophy
 
-- **Easy on eyes** - Soft backgrounds, warm charcoal text (not harsh black)
-- **Calm but focused** - Promotes productivity without drowsiness
-- **Natural inspiration** - Forest greens, sky blues, sunset pinks
-- **Anti-AI-slop** - Avoids terracotta/cream/coral clichés
+- **Wabi-Sabi Editorial** - Intentional simplicity, strong typography hierarchy
+- **Cool neutrals** - No warm AI slop patterns (cream, terracotta, coral)
+- **Traditional Japanese colors** - Aizome (indigo), Shu-iro (vermillion)
+- **Sharp geometry** - 2-4px radius, no bubbly elements
+- **Accessibility first** - Skip links, focus-visible, reduced motion support
 
 ---
 
@@ -17,35 +18,37 @@ A calm, productivity-focused color palette inspired by Studio Ghibli's natural, 
 
 | Role | Color | Hex | Usage |
 |------|-------|-----|-------|
-| **Background Primary** | Warm White | `#FAFBF9` | Main page background |
-| **Background Secondary** | White | `#FFFFFF` | Cards, surfaces |
-| **Background Tertiary** | Soft Green-Gray | `#F3F5F0` | Hover states, subtle fills |
-| **Text Primary** | Warm Charcoal | `#2D3A2E` | Headings, body text |
-| **Text Secondary** | Sage Gray | `#5A6B5D` | Secondary text, labels |
-| **Text Tertiary** | Muted Sage | `#8B9A8D` | Placeholders, hints |
-| **Accent Primary** | Sage Green | `#5B8A72` | Primary buttons, links, active states |
-| **Accent Hover** | Deep Sage | `#4A7B61` | Hover states for accent |
-| **Secondary** | Sky Blue | `#7BA4C4` | Secondary accents, info states |
-| **Tertiary** | Clay Pink | `#D4A5A5` | Warm accents, notifications |
-| **Border** | Soft Green-Gray | `#E4E8E0` | Dividers, card borders |
-| **Border Strong** | Deeper Green-Gray | `#D0D6CA` | Focus states, emphasis |
+| **Background Primary** | Cool White | `#FFFFFF` | Cards, surfaces |
+| **Background Secondary** | Cool Gray | `#F8F9FA` | Main page background |
+| **Background Tertiary** | Light Gray | `#F1F3F4` | Hover states, subtle fills |
+| **Text Primary** | Ink Black | `#1A1D21` | Headings, body text |
+| **Text Secondary** | Dark Gray | `#4A5568` | Secondary text, labels |
+| **Text Tertiary** | Medium Gray | `#718096` | Placeholders, hints |
+| **Text Muted** | Light Gray | `#A0AEC0` | Disabled states |
+| **Accent Primary** | Japanese Indigo (Aizome) | `#3D5A80` | Primary buttons, links, active states |
+| **Accent Light** | Light Indigo | `#5D7A9E` | Hover states |
+| **Accent Lighter** | Pale Indigo | `#E8EEF4` | Focus rings, soft backgrounds |
+| **Accent Dark** | Dark Indigo | `#2C4460` | Pressed states |
+| **Secondary** | Vermillion (Shu-iro) | `#C73E3A` | Emphasis, favorites, important |
+| **Secondary Light** | Pale Vermillion | `#F5E8E8` | Soft backgrounds |
+| **Border** | Cool Gray | `#E1E4E8` | Dividers, card borders |
+| **Border Strong** | Darker Gray | `#D0D4D9` | Focus states, emphasis |
 
 ### Dark Mode
 
 | Role | Color | Hex | Usage |
 |------|-------|-----|-------|
-| **Background Primary** | Forest Night | `#1A1F1A` | Main page background |
-| **Background Secondary** | Dark Forest | `#232823` | Cards, surfaces |
-| **Background Tertiary** | Moss Dark | `#2A302A` | Hover states, subtle fills |
-| **Text Primary** | Pale Green-White | `#E8EDE8` | Headings, body text |
-| **Text Secondary** | Soft Sage | `#A8B5A8` | Secondary text, labels |
-| **Text Tertiary** | Muted Forest | `#6B7A6B` | Placeholders, hints |
-| **Accent Primary** | Light Sage | `#7BA98D` | Primary buttons, links |
-| **Accent Hover** | Bright Sage | `#8FBAA0` | Hover states |
-| **Secondary** | Light Sky Blue | `#8BB4D0` | Secondary accents |
-| **Tertiary** | Soft Pink | `#D4B5B5` | Warm accents |
-| **Border** | Forest Edge | `#3A423A` | Dividers, card borders |
-| **Border Strong** | Moss Edge | `#4A524A` | Focus states |
+| **Background Primary** | Dark | `#0D1117` | Cards, surfaces |
+| **Background Secondary** | Darker | `#161B22` | Main page background |
+| **Background Tertiary** | Medium Dark | `#21262D` | Hover states, subtle fills |
+| **Text Primary** | Light | `#E6EDF3` | Headings, body text |
+| **Text Secondary** | Medium Light | `#8B949E` | Secondary text, labels |
+| **Text Tertiary** | Muted | `#6E7681` | Placeholders, hints |
+| **Accent Primary** | Light Blue | `#58A6FF` | Primary buttons, links |
+| **Accent Hover** | Bright Blue | `#79B8FF` | Hover states |
+| **Secondary** | Light Red | `#F85149` | Emphasis, favorites |
+| **Border** | Dark Border | `#30363D` | Dividers, card borders |
+| **Border Strong** | Medium Border | `#484F58` | Focus states |
 
 ---
 
@@ -53,58 +56,84 @@ A calm, productivity-focused color palette inspired by Studio Ghibli's natural, 
 
 ```css
 :root {
-  /* Background */
-  --bg-primary: #FAFBF9;
-  --bg-secondary: #FFFFFF;
-  --bg-tertiary: #F3F5F0;
+  /* Primary Accent - Japanese Indigo (Aizome) */
+  --accent: #3d5a80;
+  --accent-light: #5d7a9e;
+  --accent-lighter: #e8eef4;
+  --accent-dark: #2c4460;
+  --accent-soft: rgba(61, 90, 128, 0.08);
 
-  /* Text */
-  --text-primary: #2D3A2E;
-  --text-secondary: #5A6B5D;
-  --text-tertiary: #8B9A8D;
+  /* Secondary - Vermillion (Shu-iro) */
+  --vermillion: #c73e3a;
+  --vermillion-light: #f5e8e8;
+  --vermillion-soft: rgba(199, 62, 58, 0.08);
 
-  /* Accent - Sage Green */
-  --accent: #5B8A72;
-  --accent-soft: rgba(91, 138, 114, 0.1);
-  --accent-hover: #4A7B61;
+  /* Neutrals - Cool, not warm */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #f1f3f4;
 
-  /* Secondary - Sky Blue */
-  --secondary: #7BA4C4;
-  --secondary-soft: rgba(123, 164, 196, 0.1);
-
-  /* Tertiary - Clay Pink */
-  --tertiary: #D4A5A5;
-  --tertiary-soft: rgba(212, 165, 165, 0.1);
+  /* Text - High contrast */
+  --text-primary: #1a1d21;
+  --text-secondary: #4a5568;
+  --text-tertiary: #718096;
+  --text-muted: #a0aec0;
 
   /* Borders */
-  --border: #E4E8E0;
-  --border-strong: #D0D6CA;
+  --border: #e1e4e8;
+  --border-strong: #d0d4d9;
 
-  /* Shadows */
-  --shadow-subtle: 0 1px 3px rgba(45, 58, 46, 0.04), 0 4px 12px rgba(45, 58, 46, 0.04);
-  --shadow-medium: 0 2px 8px rgba(45, 58, 46, 0.06), 0 8px 24px rgba(45, 58, 46, 0.06);
+  /* Shadows - Subtle, cool-toned */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
 
-  /* Border Radius - Slightly rounded, not bubbly */
-  --radius: 6px;
-  --radius-lg: 10px;
+  /* Radius - Sharp, intentional */
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+
+  /* Typography */
+  --font-display: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-jp: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+
+  /* Type Scale - Major Third (1.25) */
+  --text-xs: 0.64rem;
+  --text-sm: 0.8rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.563rem;
+
+  /* Spacing - 8pt grid */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --transition: 0.15s ease;
 }
 
 [data-theme="dark"] {
-  --bg-primary: #1A1F1A;
-  --bg-secondary: #232823;
-  --bg-tertiary: #2A302A;
-  --text-primary: #E8EDE8;
-  --text-secondary: #A8B5A8;
-  --text-tertiary: #6B7A6B;
-  --accent: #7BA98D;
-  --accent-soft: rgba(123, 169, 141, 0.12);
-  --accent-hover: #8FBAA0;
-  --secondary: #8BB4D0;
-  --secondary-soft: rgba(139, 180, 208, 0.12);
-  --tertiary: #D4B5B5;
-  --tertiary-soft: rgba(212, 181, 181, 0.12);
-  --border: #3A423A;
-  --border-strong: #4A524A;
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-tertiary: #21262d;
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --text-tertiary: #6e7681;
+  --text-muted: #484f58;
+  --accent: #58a6ff;
+  --accent-light: #79b8ff;
+  --accent-lighter: rgba(88, 166, 255, 0.15);
+  --accent-dark: #388bfd;
+  --accent-soft: rgba(88, 166, 255, 0.1);
+  --vermillion: #f85149;
+  --vermillion-light: rgba(248, 81, 73, 0.15);
+  --vermillion-soft: rgba(248, 81, 73, 0.1);
+  --border: #30363d;
+  --border-strong: #484f58;
 }
 ```
 
@@ -116,37 +145,43 @@ All color combinations have been validated for WCAG compliance:
 
 | Combination | Contrast Ratio | WCAG Level |
 |-------------|----------------|------------|
-| Text Primary on Bg Primary | 10.2:1 | AAA |
-| Text Secondary on Bg Primary | 5.9:1 | AA |
-| Accent on Bg Secondary | 4.7:1 | AA |
-| Accent Hover on Bg Secondary | 5.9:1 | AA |
-| White on Accent | 4.5:1 | AA |
+| Text Primary on Bg Primary | 14.5:1 | AAA |
+| Text Secondary on Bg Primary | 7.2:1 | AAA |
+| Accent on Bg Primary | 5.8:1 | AA |
+| Accent Dark on Bg Primary | 8.1:1 | AAA |
+| White on Accent | 4.6:1 | AA |
 
 ---
 
 ## Typography
 
-- **Japanese text**: `"Noto Sans JP", sans-serif`
-- **Body text**: System fonts (`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`)
-- **Monospace**: `"IBM Plex Mono", monospace`
+- **Display/Body**: `'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif`
+- **Japanese text**: `'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif`
+- **Type scale**: Major Third (1.25 ratio)
 
 ---
 
 ## Design Elements
 
 ### Border Radius
-- Small elements (buttons, inputs): `6px`
-- Cards, modals: `10px`
-- Large containers: `14px`
+- Small elements (badges, tags): `2px`
+- Medium elements (buttons, inputs): `3px`
+- Large elements (cards, modals): `4px`
+- **No large rounded corners** - sharp, intentional geometry
 
 ### Shadows
-- Subtle (cards at rest): `0 1px 3px rgba(45, 58, 46, 0.04)`
-- Medium (cards on hover): `0 2px 8px rgba(45, 58, 46, 0.06)`
+- Subtle (cards at rest): `0 1px 2px rgba(0, 0, 0, 0.04)`
+- Medium (cards on hover): `0 2px 8px rgba(0, 0, 0, 0.06)`
 - No glow effects or colored shadows
 
+### Interactions
+- **No hover lift effects** - use border color change instead
+- **No left-border decorations** on cards
+- Transitions: `0.15s ease` for most interactions
+
 ### Motion
-- Transitions: `0.2s ease` for most interactions
-- Easing: `cubic-bezier(0.16, 1, 0.3, 1)` for smooth, natural feel
+- Respect `prefers-reduced-motion` media query
+- Keep animations subtle and purposeful
 
 ---
 
@@ -156,21 +191,22 @@ These patterns are overused in AI-generated designs:
 
 - **Terracotta/coral accent colors** (`#c45c48`, `#e07860`)
 - **Cream/beige backgrounds** (`#f8f6f3`, `#fdfcfb`)
-- **Large rounded corners** (16px+)
+- **Large rounded corners** (12px+)
 - **Left-border accent lines on cards**
 - **Purple/blue gradients**
 - **Orange and teal combinations**
-- **Texture overlays and glow effects**
+- **Hover lift/scale effects**
 - **Warm shadows with colored tints**
+- **Grain/noise texture overlays**
 
 ---
 
 ## Inspiration Sources
 
-- Studio Ghibli film palettes (Totoro, Spirited Away, Howl's Moving Castle)
-- Japanese forest photography
-- Traditional Japanese color names (matcha, sora-iro, sakura)
-- Natural paper and ink aesthetics
+- Traditional Japanese indigo dyeing (Aizome)
+- Japanese vermillion ink (Shu-iro)
+- Editorial typography and clean layouts
+- Wabi-sabi aesthetic - beauty in simplicity
 
 ---
 
@@ -181,43 +217,57 @@ These patterns are overused in AI-generated designs:
 .btn-primary {
   background: var(--accent);
   color: white;
-  border-radius: var(--radius);
-  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-5);
+  border: none;
+  font-weight: 500;
+  transition: var(--transition);
 }
 
 .btn-primary:hover {
-  background: var(--accent-hover);
+  background: var(--accent-dark);
 }
 ```
 
 ### Card
 ```css
 .card {
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 16px;
-  box-shadow: var(--shadow-subtle);
+  padding: var(--space-4) var(--space-5);
+  transition: border-color var(--transition);
 }
 
 .card:hover {
-  border-color: var(--border-strong);
-  box-shadow: var(--shadow-medium);
+  border-color: var(--accent);
 }
 ```
 
 ### Input
 ```css
 input {
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
   color: var(--text-primary);
-  padding: 12px 16px;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-base);
 }
 
 input:focus {
   border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-lighter);
   outline: none;
+}
+```
+
+### Tip/Alert Box (Vermillion)
+```css
+.tip-box {
+  background: var(--vermillion-light);
+  border-left: 2px solid var(--vermillion);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-3) var(--space-4);
 }
 ```

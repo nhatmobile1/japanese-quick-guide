@@ -1,11 +1,11 @@
 {
-  "name": "日本語 Japanese Phrases",
+  "name": "Japanese Quick Guide",
   "short_name": "日本語",
   "description": "Japanese language learning phrases and vocabulary app",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FAFBF9",
-  "theme_color": "#5B8A72",
+  "background_color": "#ffffff",
+  "theme_color": "#3d5a80",
   "orientation": "portrait-primary",
   "scope": "/",
   "icons": [

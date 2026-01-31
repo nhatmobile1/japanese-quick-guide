@@ -4,80 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Japanese Quick Guide - Design Mockup</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     /*
-      Design Direction: "Ghibli Garden"
-      - Inspired by Studio Ghibli's natural, soft color palettes
-      - Sage greens, warm sky blues, soft clay pinks
-      - Easy on eyes for long study sessions
-      - Calm but focused - promotes productivity without drowsiness
-      - Light, airy backgrounds with gentle color accents
+      Design Direction: "Wabi-Sabi Editorial"
+      - Japanese aesthetic embracing intentional simplicity
+      - Strong typography hierarchy for educational content
+      - Cool neutrals, no warm AI slop patterns
+      - Japanese Indigo (Aizome) + Vermillion (Shu-iro) accents
+      - Sharp corners, no bubbly elements
     */
 
     :root {
-      /* Background - soft warm white like Ghibli skies */
-      --bg-primary: #FAFBF9;
-      --bg-secondary: #FFFFFF;
-      --bg-tertiary: #F3F5F0;
+      /* Primary Accent - Japanese Indigo (Aizome) */
+      --accent: #3d5a80;
+      --accent-light: #5d7a9e;
+      --accent-lighter: #e8eef4;
+      --accent-dark: #2c4460;
+      --accent-soft: rgba(61, 90, 128, 0.08);
 
-      /* Text - warm charcoal, not harsh black */
-      --text-primary: #2D3A2E;
-      --text-secondary: #5A6B5D;
-      --text-tertiary: #8B9A8D;
+      /* Secondary - Vermillion (Shu-iro) for emphasis */
+      --vermillion: #c73e3a;
+      --vermillion-light: #f5e8e8;
+      --vermillion-soft: rgba(199, 62, 58, 0.08);
 
-      /* Primary accent - Ghibli sage green (forest/nature) */
-      --accent: #5B8A72;
-      --accent-soft: rgba(91, 138, 114, 0.1);
-      --accent-hover: #4A7B61;
-      --accent-dark: #3D6B52;
+      /* Neutrals - Cool, not warm */
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --bg-tertiary: #f1f3f4;
 
-      /* Secondary - soft sky blue (Ghibli sky) */
-      --secondary: #7BA4C4;
-      --secondary-soft: rgba(123, 164, 196, 0.1);
+      /* Text - High contrast */
+      --text-primary: #1a1d21;
+      --text-secondary: #4a5568;
+      --text-tertiary: #718096;
+      --text-muted: #a0aec0;
 
-      /* Tertiary - warm clay pink (Ghibli sunset/warmth) */
-      --tertiary: #D4A5A5;
-      --tertiary-soft: rgba(212, 165, 165, 0.1);
+      /* Borders */
+      --border: #e1e4e8;
+      --border-strong: #d0d4d9;
 
-      --border: #E4E8E0;
-      --border-strong: #D0D6CA;
+      /* Shadows - Subtle, cool-toned */
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
 
-      --shadow-sm: 0 1px 3px rgba(45, 58, 46, 0.04);
-      --shadow-md: 0 4px 12px rgba(45, 58, 46, 0.06);
+      /* Radius - Sharp, intentional */
+      --radius-sm: 2px;
+      --radius-md: 3px;
+      --radius-lg: 4px;
 
-      --radius-sm: 6px;
-      --radius-md: 10px;
+      /* Typography */
+      --font-display: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-jp: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
 
-      --font-jp: "Noto Sans JP", sans-serif;
-      --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      /* Type Scale - Major Third (1.25) */
+      --text-xs: 0.64rem;
+      --text-sm: 0.8rem;
+      --text-base: 1rem;
+      --text-lg: 1.25rem;
+      --text-xl: 1.563rem;
 
-      --transition: 0.2s ease;
+      /* Spacing - 8pt grid */
+      --space-1: 4px;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-5: 20px;
+      --space-6: 24px;
+      --space-8: 32px;
+
+      --transition: 0.15s ease;
     }
 
     [data-theme="dark"] {
-      /* Dark mode - forest at dusk */
-      --bg-primary: #1A1F1A;
-      --bg-secondary: #232823;
-      --bg-tertiary: #2A302A;
+      /* Dark mode - Cool, not forest */
+      --bg-primary: #0d1117;
+      --bg-secondary: #161b22;
+      --bg-tertiary: #21262d;
 
-      --text-primary: #E8EDE8;
-      --text-secondary: #A8B5A8;
-      --text-tertiary: #6B7A6B;
+      --text-primary: #e6edf3;
+      --text-secondary: #8b949e;
+      --text-tertiary: #6e7681;
+      --text-muted: #484f58;
 
-      --accent: #7BA98D;
-      --accent-soft: rgba(123, 169, 141, 0.12);
-      --accent-hover: #8FBAA0;
-      --accent-dark: #6B9A7D;
+      --accent: #58a6ff;
+      --accent-light: #79b8ff;
+      --accent-lighter: rgba(88, 166, 255, 0.15);
+      --accent-dark: #388bfd;
+      --accent-soft: rgba(88, 166, 255, 0.1);
 
-      --secondary: #8BB4D0;
-      --secondary-soft: rgba(139, 180, 208, 0.12);
+      --vermillion: #f85149;
+      --vermillion-light: rgba(248, 81, 73, 0.15);
+      --vermillion-soft: rgba(248, 81, 73, 0.1);
 
-      --tertiary: #D4B5B5;
-      --tertiary-soft: rgba(212, 181, 181, 0.12);
+      --border: #30363d;
+      --border-strong: #484f58;
+    }
 
-      --border: #3A423A;
-      --border-strong: #4A524A;
+    /* Reduced motion preference */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
     }
 
     * {
@@ -88,20 +119,39 @@
 
     body {
       font-family: var(--font-body);
-      background: var(--bg-primary);
+      background: var(--bg-secondary);
       color: var(--text-primary);
       line-height: 1.6;
+      font-size: var(--text-base);
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    /* Header - Sharp, editorial feel */
+    /* Skip link for accessibility */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      background: var(--accent);
+      color: white;
+      padding: var(--space-2) var(--space-4);
+      z-index: 1001;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* Header - Clean, editorial */
     header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: var(--bg-secondary);
+      background: var(--bg-primary);
       border-bottom: 1px solid var(--border);
-      padding: 16px 24px;
+      padding: var(--space-4) var(--space-6);
     }
 
     .header-content {
@@ -115,27 +165,22 @@
     .logo {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: var(--space-3);
     }
 
-    /* Logo mark - inspired by hanko stamps */
+    /* Logo mark - Sharp, like a hanko stamp */
     .logo-mark {
       width: 40px;
       height: 40px;
       background: var(--accent);
-      border-radius: 2px;
+      border-radius: var(--radius-sm);
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
       font-family: var(--font-jp);
-      font-size: 20px;
+      font-size: var(--text-lg);
       font-weight: 700;
-      transition: transform var(--transition);
-    }
-
-    .logo-mark:hover {
-      transform: scale(1.05);
     }
 
     .logo-text {
@@ -147,9 +192,10 @@
     }
 
     .logo-subtitle {
-      font-size: 0.65rem;
-      font-weight: 500;
-      letter-spacing: 0.15em;
+      font-family: var(--font-display);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--text-tertiary);
       margin-top: 2px;
@@ -157,32 +203,32 @@
 
     .header-actions {
       display: flex;
-      gap: 8px;
+      gap: var(--space-2);
     }
 
     .icon-btn {
-      width: 40px;
-      height: 40px;
-      border-radius: var(--radius-sm);
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-md);
       border: 1px solid var(--border);
-      background: var(--bg-secondary);
-      color: var(--text-secondary);
+      background: var(--bg-primary);
+      color: var(--text-tertiary);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: all var(--transition);
+      transition: var(--transition);
     }
 
     .icon-btn:hover {
-      border-color: var(--text-primary);
-      color: var(--text-primary);
+      border-color: var(--accent);
+      color: var(--accent);
     }
 
     .icon-btn.active {
-      background: var(--text-primary);
-      border-color: var(--text-primary);
-      color: var(--bg-secondary);
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
     }
 
     .icon-btn svg {
@@ -194,7 +240,7 @@
     .search-container {
       max-width: 640px;
       margin: 0 auto;
-      padding: 20px 24px 12px;
+      padding: var(--space-5) var(--space-6) var(--space-3);
     }
 
     .search-wrapper {
@@ -203,10 +249,11 @@
 
     .search-icon {
       position: absolute;
-      left: 14px;
+      left: var(--space-4);
       top: 50%;
       transform: translateY(-50%);
-      color: var(--text-tertiary);
+      color: var(--text-muted);
+      pointer-events: none;
     }
 
     .search-icon svg {
@@ -216,30 +263,32 @@
 
     #search {
       width: 100%;
-      padding: 12px 14px 12px 42px;
+      padding: var(--space-3) var(--space-4);
+      padding-left: 42px;
       border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      background: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      background: var(--bg-primary);
       color: var(--text-primary);
       font-family: var(--font-body);
-      font-size: 14px;
+      font-size: var(--text-base);
       outline: none;
-      transition: all var(--transition);
+      transition: var(--transition);
     }
 
     #search::placeholder {
-      color: var(--text-tertiary);
+      color: var(--text-muted);
     }
 
     #search:focus {
-      border-color: var(--text-primary);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-lighter);
     }
 
     /* Tabs - Underline style, editorial */
     .tabs-container {
       max-width: 640px;
       margin: 0 auto;
-      padding: 0 24px;
+      padding: 0 var(--space-6);
       border-bottom: 1px solid var(--border);
     }
 
@@ -256,15 +305,15 @@
 
     .tab {
       flex-shrink: 0;
-      padding: 12px 16px;
+      padding: var(--space-3) var(--space-4);
       background: transparent;
       border: none;
       color: var(--text-tertiary);
       font-family: var(--font-body);
-      font-size: 13px;
+      font-size: var(--text-sm);
       font-weight: 500;
       cursor: pointer;
-      transition: all var(--transition);
+      transition: var(--transition);
       position: relative;
     }
 
@@ -285,7 +334,8 @@
     }
 
     .tab.active {
-      color: var(--text-primary);
+      color: var(--accent);
+      font-weight: 600;
     }
 
     .tab.active::after {
@@ -296,57 +346,55 @@
     .content {
       max-width: 640px;
       margin: 0 auto;
-      padding: 24px 24px 120px;
+      padding: var(--space-6) var(--space-6) 120px;
     }
 
     /* Category Headers - Strong typography */
     .category {
-      margin-bottom: 40px;
+      margin-bottom: var(--space-8);
     }
 
     .category-header {
-      margin-bottom: 16px;
+      margin-bottom: var(--space-4);
       display: flex;
       align-items: baseline;
-      gap: 12px;
+      gap: var(--space-3);
     }
 
     .category-title {
-      font-family: var(--font-body);
-      font-size: 11px;
+      font-family: var(--font-display);
+      font-size: var(--text-xs);
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       color: var(--text-tertiary);
     }
 
     .category-count {
-      font-size: 10px;
-      color: var(--text-tertiary);
+      font-size: var(--text-xs);
+      color: var(--text-muted);
       background: var(--bg-tertiary);
       padding: 2px 6px;
-      border-radius: 2px;
+      border-radius: var(--radius-sm);
     }
 
-    /* Phrase Cards - Clean, structured */
+    /* Phrase Cards - Clean, no decorations */
     .phrase-card {
-      background: var(--bg-secondary);
+      background: var(--bg-primary);
       border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 16px 20px;
+      border-radius: var(--radius-lg);
+      padding: var(--space-4) var(--space-5);
       cursor: pointer;
-      transition: all var(--transition);
-      margin-bottom: 8px;
-      position: relative;
+      transition: border-color var(--transition);
+      margin-bottom: var(--space-2);
     }
 
     .phrase-card:hover {
-      border-color: var(--border-strong);
-      box-shadow: var(--shadow-sm);
+      border-color: var(--accent);
     }
 
     .phrase-card:active {
-      transform: scale(0.995);
+      background: var(--bg-secondary);
     }
 
     .phrase-card.copied {
@@ -358,7 +406,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 16px;
+      gap: var(--space-4);
     }
 
     .phrase-content {
@@ -367,54 +415,55 @@
 
     .japanese {
       font-family: var(--font-jp);
-      font-size: 1.15rem;
+      font-size: var(--text-lg);
       font-weight: 500;
       color: var(--text-primary);
-      margin-bottom: 6px;
-      line-height: 1.5;
+      margin-bottom: var(--space-2);
+      line-height: 1.6;
     }
 
     .english {
-      font-size: 0.875rem;
+      font-size: var(--text-sm);
       color: var(--text-secondary);
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     .note {
-      font-size: 0.75rem;
+      font-size: var(--text-xs);
       color: var(--accent);
-      margin-top: 8px;
-      font-style: italic;
+      margin-top: var(--space-2);
+      font-weight: 500;
     }
 
     /* Action buttons */
     .card-actions {
       display: flex;
-      gap: 4px;
+      gap: var(--space-1);
       flex-shrink: 0;
     }
 
     .action-btn {
       width: 32px;
       height: 32px;
-      border-radius: var(--radius-sm);
-      border: 1px solid transparent;
-      background: var(--bg-tertiary);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: var(--bg-primary);
       color: var(--text-tertiary);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: all var(--transition);
+      transition: var(--transition);
     }
 
     .action-btn:hover {
-      color: var(--text-primary);
-      background: var(--bg-tertiary);
+      border-color: var(--accent);
+      color: var(--accent);
     }
 
     .action-btn.active {
-      background: var(--accent);
+      background: var(--vermillion);
+      border-color: var(--vermillion);
       color: white;
     }
 
@@ -430,26 +479,26 @@
       gap: 1px;
       background: var(--border);
       border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
+      border-radius: var(--radius-lg);
       overflow: hidden;
-      margin-bottom: 16px;
+      margin-bottom: var(--space-4);
     }
 
     .counter-card {
-      background: var(--bg-secondary);
-      padding: 16px 8px;
+      background: var(--bg-primary);
+      padding: var(--space-4) var(--space-2);
       text-align: center;
       cursor: pointer;
-      transition: all var(--transition);
+      transition: var(--transition);
     }
 
     .counter-card:hover {
-      background: var(--bg-tertiary);
+      background: var(--accent-lighter);
     }
 
     .counter-num {
-      font-family: var(--font-body);
-      font-size: 1.25rem;
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
       font-weight: 600;
       color: var(--accent);
       line-height: 1;
@@ -457,153 +506,206 @@
 
     .counter-jp {
       font-family: var(--font-jp);
-      font-size: 0.875rem;
+      font-size: var(--text-sm);
       color: var(--text-primary);
-      margin-top: 6px;
+      margin-top: var(--space-2);
     }
 
     /* Vocab Cards - Horizontal layout */
     .vocab-card {
-      background: var(--bg-secondary);
+      background: var(--bg-primary);
       border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 14px 16px;
+      border-radius: var(--radius-lg);
+      padding: var(--space-3) var(--space-4);
       cursor: pointer;
-      transition: all var(--transition);
+      transition: border-color var(--transition);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 16px;
-      margin-bottom: 6px;
+      gap: var(--space-4);
+      margin-bottom: var(--space-2);
     }
 
     .vocab-card:hover {
-      border-color: var(--border-strong);
+      border-color: var(--accent);
     }
 
     .vocab-content {
       flex: 1;
       display: flex;
       align-items: baseline;
-      gap: 12px;
+      gap: var(--space-3);
       flex-wrap: wrap;
     }
 
     .vocab-jp {
       font-family: var(--font-jp);
-      font-size: 1rem;
+      font-size: var(--text-base);
       font-weight: 500;
       color: var(--text-primary);
     }
 
     .vocab-en {
-      font-size: 0.8rem;
+      font-size: var(--text-sm);
       color: var(--text-secondary);
     }
 
-    /* Tip Box */
+    /* Tip Box - Vermillion accent */
     .tip-box {
-      background: var(--secondary-soft);
-      border-left: 3px solid var(--secondary);
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      padding: 12px 16px;
-      margin-bottom: 16px;
+      background: var(--vermillion-light);
+      border-left: 2px solid var(--vermillion);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: var(--space-3) var(--space-4);
+      margin-bottom: var(--space-4);
     }
 
     .tip-text {
-      font-size: 0.8rem;
+      font-size: var(--text-sm);
       color: var(--text-secondary);
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     /* Toast */
     .toast {
       position: fixed;
-      bottom: 32px;
+      bottom: var(--space-8);
       left: 50%;
       transform: translateX(-50%);
       background: var(--text-primary);
       color: var(--bg-primary);
-      padding: 12px 24px;
-      border-radius: var(--radius-sm);
-      font-size: 13px;
+      padding: var(--space-3) var(--space-6);
+      border-radius: var(--radius-md);
+      font-size: var(--text-sm);
       font-weight: 500;
       box-shadow: var(--shadow-md);
     }
 
     /* Theme Toggle Demo */
     .theme-section {
-      margin-top: 60px;
-      padding-top: 40px;
+      margin-top: var(--space-8);
+      padding-top: var(--space-8);
       border-top: 1px solid var(--border);
     }
 
     .theme-section h3 {
-      font-size: 11px;
+      font-family: var(--font-display);
+      font-size: var(--text-xs);
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       color: var(--text-tertiary);
-      margin-bottom: 16px;
+      margin-bottom: var(--space-4);
     }
 
     .theme-toggle-demo {
       display: flex;
-      gap: 12px;
+      gap: var(--space-3);
     }
 
     .theme-btn {
-      padding: 10px 20px;
+      padding: var(--space-2) var(--space-5);
       border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      background: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      background: var(--bg-primary);
       color: var(--text-secondary);
-      font-size: 13px;
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 500;
       cursor: pointer;
-      transition: all var(--transition);
+      transition: var(--transition);
     }
 
     .theme-btn:hover {
-      border-color: var(--text-primary);
-      color: var(--text-primary);
+      border-color: var(--accent);
+      color: var(--accent);
     }
 
     .theme-btn.active {
-      background: var(--text-primary);
-      border-color: var(--text-primary);
-      color: var(--bg-secondary);
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
     }
 
     /* Design Notes Section */
     .design-notes {
-      margin-top: 60px;
-      padding: 24px;
+      margin-top: var(--space-8);
+      padding: var(--space-6);
       background: var(--bg-tertiary);
-      border-radius: var(--radius-md);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
     }
 
     .design-notes h3 {
-      font-size: 14px;
+      font-family: var(--font-display);
+      font-size: var(--text-sm);
       font-weight: 600;
-      margin-bottom: 16px;
+      margin-bottom: var(--space-4);
       color: var(--text-primary);
     }
 
     .design-notes ul {
       list-style: none;
-      font-size: 13px;
+      font-size: var(--text-sm);
       color: var(--text-secondary);
-      line-height: 1.8;
+      line-height: 1.9;
+    }
+
+    .design-notes li {
+      padding-left: var(--space-4);
+      position: relative;
     }
 
     .design-notes li::before {
-      content: "—";
-      margin-right: 8px;
-      color: var(--accent);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 4px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    /* Focus visible for keyboard navigation */
+    *:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .header-content {
+        padding: 0 var(--space-4);
+      }
+
+      .search-container,
+      .tabs-container,
+      .content {
+        padding-left: var(--space-4);
+        padding-right: var(--space-4);
+      }
+
+      .counter-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      .counter-card {
+        padding: var(--space-3) var(--space-1);
+      }
+
+      .counter-num {
+        font-size: var(--text-lg);
+      }
+
+      .counter-jp {
+        font-size: var(--text-xs);
+      }
     }
   </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
   <header>
     <div class="header-content">
       <div class="logo">
@@ -650,7 +752,7 @@
     </div>
   </div>
 
-  <div class="content">
+  <div class="content" id="main-content">
     <!-- Phrase Cards Section -->
     <div class="category">
       <div class="category-header">
@@ -726,7 +828,7 @@
     <!-- Counter Section -->
     <div class="category">
       <div class="category-header">
-        <span class="category-title">General Objects (〜つ)</span>
+        <span class="category-title">General Objects (~tsu)</span>
       </div>
 
       <div class="tip-box">
@@ -855,52 +957,52 @@
       <h3>Color Palette</h3>
       <div style="display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap;">
         <div style="text-align: center;">
-          <div style="width: 60px; height: 60px; background: #5B8A72; border-radius: 6px; margin-bottom: 6px;"></div>
-          <div style="font-size: 10px; color: var(--text-secondary);">Sage Green</div>
-          <div style="font-size: 9px; color: var(--text-tertiary);">#5B8A72</div>
+          <div style="width: 60px; height: 60px; background: #3d5a80; border-radius: 4px; margin-bottom: 6px;"></div>
+          <div style="font-size: 10px; color: var(--text-secondary);">Aizome</div>
+          <div style="font-size: 9px; color: var(--text-tertiary);">#3d5a80</div>
         </div>
         <div style="text-align: center;">
-          <div style="width: 60px; height: 60px; background: #4A7B61; border-radius: 6px; margin-bottom: 6px;"></div>
-          <div style="font-size: 10px; color: var(--text-secondary);">Deep Sage</div>
-          <div style="font-size: 9px; color: var(--text-tertiary);">#4A7B61</div>
+          <div style="width: 60px; height: 60px; background: #2c4460; border-radius: 4px; margin-bottom: 6px;"></div>
+          <div style="font-size: 10px; color: var(--text-secondary);">Indigo Dark</div>
+          <div style="font-size: 9px; color: var(--text-tertiary);">#2c4460</div>
         </div>
         <div style="text-align: center;">
-          <div style="width: 60px; height: 60px; background: #7BA4C4; border-radius: 6px; margin-bottom: 6px;"></div>
-          <div style="font-size: 10px; color: var(--text-secondary);">Sky Blue</div>
-          <div style="font-size: 9px; color: var(--text-tertiary);">#7BA4C4</div>
+          <div style="width: 60px; height: 60px; background: #c73e3a; border-radius: 4px; margin-bottom: 6px;"></div>
+          <div style="font-size: 10px; color: var(--text-secondary);">Shu-iro</div>
+          <div style="font-size: 9px; color: var(--text-tertiary);">#c73e3a</div>
         </div>
         <div style="text-align: center;">
-          <div style="width: 60px; height: 60px; background: #D4A5A5; border-radius: 6px; margin-bottom: 6px;"></div>
-          <div style="font-size: 10px; color: var(--text-secondary);">Clay Pink</div>
-          <div style="font-size: 9px; color: var(--text-tertiary);">#D4A5A5</div>
+          <div style="width: 60px; height: 60px; background: #1a1d21; border-radius: 4px; margin-bottom: 6px;"></div>
+          <div style="font-size: 10px; color: var(--text-secondary);">Ink Black</div>
+          <div style="font-size: 9px; color: var(--text-tertiary);">#1a1d21</div>
         </div>
         <div style="text-align: center;">
-          <div style="width: 60px; height: 60px; background: #2D3A2E; border-radius: 6px; margin-bottom: 6px;"></div>
-          <div style="font-size: 10px; color: var(--text-secondary);">Charcoal</div>
-          <div style="font-size: 9px; color: var(--text-tertiary);">#2D3A2E</div>
+          <div style="width: 60px; height: 60px; background: #ffffff; border: 1px solid #e1e4e8; border-radius: 4px; margin-bottom: 6px;"></div>
+          <div style="font-size: 10px; color: var(--text-secondary);">Cool White</div>
+          <div style="font-size: 9px; color: var(--text-tertiary);">#ffffff</div>
         </div>
         <div style="text-align: center;">
-          <div style="width: 60px; height: 60px; background: #FAFBF9; border: 1px solid #E4E8E0; border-radius: 6px; margin-bottom: 6px;"></div>
-          <div style="font-size: 10px; color: var(--text-secondary);">Warm White</div>
-          <div style="font-size: 9px; color: var(--text-tertiary);">#FAFBF9</div>
+          <div style="width: 60px; height: 60px; background: #f8f9fa; border: 1px solid #e1e4e8; border-radius: 4px; margin-bottom: 6px;"></div>
+          <div style="font-size: 10px; color: var(--text-secondary);">Cool Gray</div>
+          <div style="font-size: 9px; color: var(--text-tertiary);">#f8f9fa</div>
         </div>
       </div>
     </div>
 
     <!-- Design Notes -->
     <div class="design-notes">
-      <h3>Design Direction: "Ghibli Garden"</h3>
+      <h3>Design Direction: "Wabi-Sabi Editorial"</h3>
       <ul>
-        <li>Sage green primary (#5B8A72) - forest/nature inspired, calming yet focused</li>
-        <li>Soft sky blue secondary (#7BA4C4) - like Ghibli's painted skies</li>
-        <li>Warm clay pink tertiary (#D4A5A5) - sunset warmth, gentle accent</li>
-        <li>Warm white backgrounds (#FAFBF9) - easy on eyes for long reading</li>
-        <li>Charcoal text (#2D3A2E) - softer than pure black, less eye strain</li>
-        <li>Slightly rounded corners (6px) - friendly but not bubbly</li>
-        <li>Clean underline tabs - focused, not distracting</li>
-        <li>No warm terracotta/coral - avoids AI slop aesthetic</li>
-        <li>No cream backgrounds - fresher, more natural feel</li>
-        <li>Promotes calm productivity - not sleepy, not anxious</li>
+        <li>Japanese Indigo primary (#3d5a80) - Aizome, traditional Japanese dye color</li>
+        <li>Vermillion secondary (#c73e3a) - Shu-iro, used for emphasis and favorites</li>
+        <li>Cool white backgrounds (#ffffff, #f8f9fa) - not warm cream</li>
+        <li>High contrast ink black text (#1a1d21) - clear, readable</li>
+        <li>Sharp corners (2-4px) - intentional, not bubbly</li>
+        <li>No hover lift effects - subtle border interactions only</li>
+        <li>No left-border decorations on cards - clean edges</li>
+        <li>Source Sans 3 for UI, Noto Sans JP for Japanese</li>
+        <li>8pt spacing grid for consistent rhythm</li>
+        <li>Accessibility: skip links, focus-visible, reduced motion</li>
       </ul>
     </div>
   </div>
